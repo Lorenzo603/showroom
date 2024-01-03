@@ -5,8 +5,30 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Box, Grid } from '@mui/material';
 import HomeIntro from '@/components/HomeIntro';
+import CertificationBadge from '@/components/CertificationBadge';
 
 export default function Home() {
+
+  function getCertificationBadges() {
+    return [
+      {
+        'name': 'AWS Security Specialty Certification',
+        'badge': "/img/certifications/aws-security-specialty-badge.png",
+      },
+      {
+        'name': 'AWS Solution Architect Associate Certification',
+        'badge': "/img/certifications/aws-solution-architect-associate-badge.png",
+      },
+      {
+        'name': 'AWS Developer Associate Certification',
+        'badge': "/img/certifications/aws-developer-associate-badge.png",
+      },
+      {
+        'name': 'AWS Cloud Practitioner Certification',
+        'badge': "/img/certifications/aws-cloud-practitioner-badge.png",
+      },
+    ]
+  }
 
   function getProjects() {
     return [
@@ -70,18 +92,60 @@ export default function Home() {
         </Grid>
       </Grid>
 
+      <Grid item xs={12}>
+        <Grid container justifyContent="center" className='about_content'>
+          <Grid item xs={12}>
+            <span className="project_title">About Me - Short Bio / Skills / Technologies</span>
+          </Grid>
+          <Grid item xs={8}>
+            <Grid container justifyContent="space-between">
+              <Grid item xs={4}>
+                <Grid container direction="column">
+                  <Grid item xs={12}><h3>Me</h3></Grid>
+                  <Grid item xs={12}><p>This is a story of how I was turn  upside down</p></Grid>
+                </Grid>
+
+              </Grid>
+              <Grid item xs={4}>
+                <Grid container direction="column">
+                  <Grid item xs={12}><h3>My Skills</h3></Grid>
+                  <Grid item xs={12}>
+                    {Array.from({ length: 6 }, (_, i) => i + 1).map(index => {
+                      return (
+                        <span key={index} className='skill'>Java</span>
+                      );
+                    })}
+
+                  </Grid>
+                  <Grid item xs={12}><h3>My Certs</h3></Grid>
+                  <Grid item xs={12}>
+                    {
+                      getCertificationBadges().map(
+                        (certification) => (
+                          <CertificationBadge key={certification.name} certification={certification} />
+                        )
+                      )
+                    }
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+
+        </Grid>
+      </Grid>
 
       <Grid item xs={12}>
         <Grid container justifyContent="center" className='project_content'>
           <Grid item xs={12}>
             <span className="project_title">My personal projects</span>
           </Grid>
-          <Grid item xs={10} style={{ marginBottom: "2em" }}>
+          <Grid item xs={10} style={{ marginBottom: "5em" }}>
             <Grid container spacing={4}>
               {getProjects().map(
                 (project) => (
                   <Grid key={project.title} item xs={12} md={6} lg={4}>
-                    <ProjectCard project={project}/>
+                    <ProjectCard project={project} />
                   </Grid>
                 )
               )}
@@ -90,8 +154,6 @@ export default function Home() {
           </Grid>
         </Grid>
       </Grid>
-
-
 
 
       <Grid item xs={12}>
