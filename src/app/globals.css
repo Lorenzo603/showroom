@@ -196,8 +196,6 @@ h1.hero_primary {
 }
 
 .about_content {
-  color: #333;
-  background-color: #eee;
   text-align: center;
 }
 
@@ -346,5 +344,7 @@ h3 {
 }
 
 .page-body {
+  color: #333;
+  background-color: #eee;
   flex-grow: 1;
 }
