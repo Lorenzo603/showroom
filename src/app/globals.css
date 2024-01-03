@@ -98,58 +98,41 @@ a {
 
 /* Header */
 
-.header_logo {
+.header {
+  overflow: hidden;
   background-color: black;
-  font-weight: 800;
-  text-align: center;
-  padding: 2em;
 }
 
-.header_link {
-  background-color: black;
-  color: #eee;
+.header a {
+  float: left;
+  color: eee;
+  text-decoration: none;
+  text-align: center;
   font-weight: 800;
+  line-height: 1em;
   text-transform: uppercase;
   padding: 2em;
-
 }
 
-.header_link:hover {
+.header a:hover {
   cursor: pointer;
   background-color: #eee;
   color: black;
 }
 
-/* Hamburger for smaller screens */
-@media only screen and (min-width: 701px) {
-
-  /* hide the hamburger */
-  .hamburger {
-    display: none;
-  }
-
-  /* show all the nav-buttons */
-  .nav-button {
-    display: block;
-  }
+.header-right {
+  float: right;
 }
 
-/* if browser window is small (max-width) */
-@media only screen and (max-width: 700px) {
-
-  /* show everything with the hamburger class */
-  .hamburger {
+@media screen and (max-width: 700px) {
+  .header a {
+    float: none;
     display: block;
+    text-align: left;
   }
-
-  /* hide all the heaeder-links */
-  .header_link {
-    display: none;
+  .header-right {
+    float: none;
   }
-}
-
-.hamburger-image {
-  filter: invert(100%);
 }
 
 /* Hero Content */

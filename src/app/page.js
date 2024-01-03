@@ -109,27 +109,16 @@ export default function Home() {
 
       <Grid item xs={12} >
         <header>
-          <Grid container justifyContent="center">
-            <Grid item xs={10}>
-              <Grid container justifyContent="space-between">
-
-                <Grid item xs={2} className='header_logo'>{process.env.NEXT_PUBLIC_PERSONAL_NAME}</Grid>
-
-                <Grid item xs={10}>
-                  <Grid container justifyContent="flex-end" alignItems="center">
-                    <div className="hamburger"><HamburgerMenu/></div>
-                    <Link href="#home" className='header_link'>Home</Link>
-                    <Link href="#about" className='header_link'>About</Link>
-                    <Link href="#projects" className='header_link'>Projects</Link>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
+          <div class="header">
+            <a href="#home" className="logo header_logo">{process.env.NEXT_PUBLIC_PERSONAL_NAME}</a>
+            <div class="header-right">
+              <Link href="#home">Home</Link>
+              <Link href="#about">About</Link>
+              <Link href="#projects">Projects</Link>
+            </div>
+          </div>
         </header>
-
       </Grid>
-
 
 
       <Grid item xs={12}>
