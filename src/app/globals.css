@@ -73,6 +73,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -125,7 +126,8 @@ a {
   color: #333;
   background-position: center;
   background-color: #eee;
-  background-image: linear-gradient(to top, rgba(203, 230, 254, 0.138) 0%, rgba(206, 243, 255, 0.272) 100%),
+  background-image:
+    /* linear-gradient(to top, rgba(203, 230, 254, 0.138) 0%, rgba(206, 243, 255, 0.272) 100%), */
     url('/img/geometric_mosaic_tile_shape_background.jpg');
   height: 50vh;
   min-height: 30rem;
@@ -154,15 +156,44 @@ a {
 }
 
 /* About */
+.about_title {
+  color: #333;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 2.2;
+}
+
 .about_content {
   color: #333;
   background-color: #eee;
   text-align: center;
 }
 
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 2em;
+}
+
+.bio {
+  font-size: 1.2em;
+  color: #666;
+  /* max-width: 60rem; */
+  line-height: 1.7;
+  text-align: start;
+  margin-bottom: 1em;
+}
+
 /* Skills */
 .skill {
-  
+  background-color: lightgray;
+  margin-right: 0.7em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-weight: 500;
+  /* line-height: 1em; */
 }
 
 /* Certifications */
@@ -177,7 +208,7 @@ a {
 /* Projects */
 .project_content {
   color: #333;
-  background-color: #eee;
+  background-color: #fafafa;
   text-align: center;
 }
 
@@ -192,6 +223,64 @@ a {
   background-color: white;
   color: #333;
   padding: 0.5em;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+
+  /* Needed to avoid tooltip being cutoff by the Card */
+  overflow: visible;
+  z-index: auto;
+}
+
+.project_card:hover {
+  box-shadow: 0 0 20px #515151;
+}
+
+.technology-logo {
+  margin-right: 0.5em;
+}
+
+/* Tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -63px;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }
 
 /* Footer */

@@ -6,8 +6,45 @@ import Footer from '../components/Footer';
 import { Box, Grid } from '@mui/material';
 import HomeIntro from '@/components/HomeIntro';
 import CertificationBadge from '@/components/CertificationBadge';
+import Link from 'next/link';
 
 export default function Home() {
+
+
+  function getSkills() {
+    return [
+      {
+        "name": "Java",
+      },
+      {
+        "name": "Spring",
+      },
+      {
+        "name": "SAP Commerce",
+      },
+      {
+        "name": "Python",
+      },
+      {
+        "name": "AWS",
+      },
+      {
+        "name": "SQL",
+      },
+      {
+        "name": "MongoDB",
+      },
+      {
+        "name": "Next.js",
+      },
+      {
+        "name": "React",
+      },
+      {
+        "name": "Git",
+      },
+    ]
+  }
 
   function getCertificationBadges() {
     return [
@@ -34,23 +71,33 @@ export default function Home() {
     return [
       {
         'title': 'Japanese Reviews',
-        'image': '/img/project-japanese-reviews-next.png'
+        'image': '/img/project-japanese-reviews-next.png',
+        'description': 'Learn the Japanese language by guessing meanings and readings of Kanjis. Vocabulary powered by the Wanikani dictionary.',
+        'technologies': ['nextjs', 'mongodb', 'react'],
       },
       {
         'title': 'EVA',
-        'image': '/img/project-japanese-reviews-next.png'
+        'image': '/img/project-japanese-reviews-next.png',
+        'description': 'Concept avatar with text-to-speech capabilities and lip syncing. Uses the Raylib library to draw the UI and handle animations',
+        'technologies': ['python'],
       },
       {
         'title': 'Martian Chess',
-        'image': '/img/project-japanese-reviews-next.png'
+        'image': '/img/project-japanese-reviews-next.png',
+        'description': 'Implementation of the Martian Chess board game from Looney Labs built with the Godot game engine',
+        'technologies': ['godot'],
       },
       {
         'title': 'Trader Bot',
-        'image': '/img/project-japanese-reviews-next.png'
+        'image': '/img/project-japanese-reviews-next.png',
+        'description': 'Trading and Backtesting engine. Implement your own trading strategy in python and automatically place trades on various exchanges.',
+        'technologies': ['python'],
       },
       {
         'title': 'Showroom',
-        'image': '/img/project-japanese-reviews-next.png'
+        'image': '/img/project-japanese-reviews-next.png',
+        'description': 'This website. Created with the Next.js framework. Feel free to use this template.',
+        'technologies': ['nextjs', 'react'],
       },
     ]
   }
@@ -59,141 +106,185 @@ export default function Home() {
 
     <Grid container>
 
-      <Grid item xs={12}>
-        <Grid container justifyContent="center">
-          <Grid item xs={10}>
-            <Grid container justifyContent="space-between">
+      <Grid item xs={12} >
+        <header>
+          <Grid container justifyContent="center">
+            <Grid item xs={10}>
+              <Grid container justifyContent="space-between">
 
-              <Grid item xs={2} className='header_logo'>Lorenzo</Grid>
+                <Grid item xs={2} className='header_logo'>{process.env.NEXT_PUBLIC_PERSONAL_NAME}</Grid>
 
-              <Grid item xs={10}>
-                <Grid container justifyContent="flex-end" alignItems="center">
-                  <span className='header_link'>Home</span>
-                  <span className='header_link'>Projects</span>
-                  <span className='header_link'>About</span>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-
-      </Grid>
-
-
-
-      <Grid item xs={12}>
-        <Grid container direction="column" justifyContent="center" className='hero_content'>
-          <Grid item xs={1}>
-            <span className='hero_primary'>Hi, I'm Lorenzo</span>
-          </Grid>
-          <Grid item xs={1}>
-            <span className='hero_secondary'>I develop all kind of applications, some professionally, some for fun!</span>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12}>
-        <Grid container justifyContent="center" className='about_content'>
-          <Grid item xs={12}>
-            <span className="project_title">About Me - Short Bio / Skills / Technologies</span>
-          </Grid>
-          <Grid item xs={8}>
-            <Grid container justifyContent="space-between">
-              <Grid item xs={4}>
-                <Grid container direction="column">
-                  <Grid item xs={12}><h3>Me</h3></Grid>
-                  <Grid item xs={12}><p>This is a story of how I was turn  upside down</p></Grid>
-                </Grid>
-
-              </Grid>
-              <Grid item xs={4}>
-                <Grid container direction="column">
-                  <Grid item xs={12}><h3>My Skills</h3></Grid>
-                  <Grid item xs={12}>
-                    {Array.from({ length: 6 }, (_, i) => i + 1).map(index => {
-                      return (
-                        <span key={index} className='skill'>Java</span>
-                      );
-                    })}
-
-                  </Grid>
-                  <Grid item xs={12}><h3>My Certs</h3></Grid>
-                  <Grid item xs={12}>
-                    {
-                      getCertificationBadges().map(
-                        (certification) => (
-                          <CertificationBadge key={certification.name} certification={certification} />
-                        )
-                      )
-                    }
+                <Grid item xs={10}>
+                  <Grid container justifyContent="flex-end" alignItems="center">
+                    <Link href="#home" className='header_link'>Home</Link>
+                    <Link href="#about" className='header_link'>About</Link>
+                    <Link href="#projects" className='header_link'>Projects</Link>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
+        </header>
 
-        </Grid>
       </Grid>
 
-      <Grid item xs={12}>
-        <Grid container justifyContent="center" className='project_content'>
-          <Grid item xs={12}>
-            <span className="project_title">My personal projects</span>
-          </Grid>
-          <Grid item xs={10} style={{ marginBottom: "5em" }}>
-            <Grid container spacing={4}>
-              {getProjects().map(
-                (project) => (
-                  <Grid key={project.title} item xs={12} md={6} lg={4}>
-                    <ProjectCard project={project} />
-                  </Grid>
-                )
-              )}
 
+
+      <Grid item xs={12}>
+        <section id="home">
+          <Grid container direction="column" justifyContent="center" className='hero_content'>
+            <Grid item xs={1}>
+              <span className='hero_primary'>Hi, I'm Lorenzo</span>
+            </Grid>
+            <Grid item xs={1}>
+              <span className='hero_secondary'>I develop all kind of applications, some professionally, some for fun!</span>
             </Grid>
           </Grid>
-        </Grid>
+        </section>
+      </Grid>
+
+
+
+      <Grid item xs={12}>
+        <section id="about">
+          <Grid container justifyContent="center" className='about_content'>
+            <Grid item xs={12}>
+              <span className="about_title">About Me</span>
+            </Grid>
+            <Grid item xs={8}>
+              <Grid container justifyContent="space-between">
+                <Grid item xs={5}>
+                  <Grid container direction="column">
+                    <Grid item xs={12}>
+                      <Grid container justifyContent="flex-start">
+                        <h3>Short Bio</h3>
+                      </Grid>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Grid container justifyContent="flex-start">
+                        <p className='bio'>
+                          I'm a Software Developer with interests in all technologies spanning from scalable <strong>Cloud Architectures</strong> to Videogames.
+                        </p>
+                        <p className='bio'>
+                          In my professional life I work mostly in the Ecommerce field where I've built and designed many <strong>Enterprise Solutions</strong> over the years.
+                        </p>
+                        <p className='bio'>
+                          This a website where I collect and share some of the <strong>projects</strong> that I pursue outside of my professional life.
+                        </p>
+                        <p className='bio'>
+                          I'm always open to new opportunities where I can learn and grow. Feel free to <strong>contact</strong> me!
+                        </p>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+
+                </Grid>
+                <Grid item xs={6}>
+                  <Grid container direction="column">
+                    <Grid item xs={12}>
+                      <Grid container justifyContent="flex-start">
+                        <h3>Main Skills</h3>
+                      </Grid>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Grid container justifyContent="flex-start">
+                        {getSkills().map(skill => {
+                          return (
+                            <span key={skill} className='skill'>{skill.name}</span>
+                          );
+                        })}
+                      </Grid>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Grid container justifyContent="flex-start">
+                        <h3>Certifications</h3>
+                      </Grid>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Grid container justifyContent="flex-start">
+                        {
+                          getCertificationBadges().map(
+                            (certification) => (
+                              <CertificationBadge key={certification.name} certification={certification} />
+                            )
+                          )
+                        }
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+
+          </Grid>
+        </section>
+      </Grid >
+
+
+
+      <Grid item xs={12}>
+        <section id="projects">
+          <Grid container justifyContent="center" className='project_content'>
+            <Grid item xs={12}>
+              <span className="project_title">My personal projects</span>
+            </Grid>
+            <Grid item xs={10} style={{ marginBottom: "5em" }}>
+              <Grid container spacing={4}>
+                {getProjects().map(
+                  (project) => (
+                    <Grid key={project.title} item xs={12} md={6} lg={4}>
+                      <ProjectCard project={project} />
+                    </Grid>
+                  )
+                )}
+
+              </Grid>
+            </Grid>
+          </Grid>
+        </section>
       </Grid>
 
 
       <Grid item xs={12}>
-        <Grid container justifyContent="center">
-          <Grid item xs={8}>
-            <Grid container justifyContent="space-between" alignItems="center">
+        <footer>
+          <Grid container justifyContent="center">
+            <Grid item xs={8}>
+              <Grid container justifyContent="space-between" alignItems="center">
 
-              <Grid item xs={3} className="footer_copyright">&#169; Copyright {new Date().getFullYear()} Lorenzo</Grid>
+                <Grid item xs={3} className="footer_copyright">&#169; Copyright {new Date().getFullYear()} {process.env.NEXT_PUBLIC_PERSONAL_NAME}</Grid>
 
-              <Grid item xs={9}>
-                <Grid container justifyContent="flex-end" alignItems="center">
-                  <Grid item xs={1} className="footer_social">
-                    <a target="_blank" href='https://mylinkedin'>
-                      <Image
-                        src="/img/social/linkedin-logo.png"
-                        width={60}
-                        height={60}
-                        alt="Lorenzo LinkedIn Profile"
-                      />
-                    </a>
-                  </Grid>
-                  <Grid item xs={1} className="footer_social">
-                    <a target="_blank" href='https://mygithub'>
-                      <Image
-                        src="/img/social/github-logo.png"
-                        width={60}
-                        height={60}
-                        alt="Lorenzo GitHub Profile"
-                      />
-                    </a>
+                <Grid item xs={9}>
+                  <Grid container justifyContent="flex-end" alignItems="center">
+                    <Grid item xs={1} className="footer_social">
+                      <a target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>
+                        <Image
+                          src="/img/social/linkedin-logo.png"
+                          width={60}
+                          height={60}
+                          alt="Lorenzo LinkedIn Profile"
+                        />
+                      </a>
+                    </Grid>
+                    <Grid item xs={1} className="footer_social">
+                      <a target="_blank" href={process.env.NEXT_PUBLIC_GITHUB_URL}>
+                        <Image
+                          src="/img/social/github-logo.png"
+                          width={60}
+                          height={60}
+                          alt="Lorenzo GitHub Profile"
+                        />
+                      </a>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </footer>
 
       </Grid>
 
-    </Grid>
+    </Grid >
 
   )
 }

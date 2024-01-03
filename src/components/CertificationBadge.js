@@ -6,8 +6,8 @@ export default function CertificationBadge({ certification }) {
     return (
         <Image
             src={certification.badge}
-            width={160}
-            height={160}
+            width={140}
+            height={140}
             alt={certification.name}
             className="certification-zoom"
         />
