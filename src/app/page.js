@@ -1,13 +1,10 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import ProjectCard from '../components/ProjectCard'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import HomeIntro from '@/components/HomeIntro';
 import CertificationBadge from '@/components/CertificationBadge';
-import Link from 'next/link';
-import HamburgerMenu from '@/components/HamburgerMenu';
 
 export default function Home() {
 
@@ -72,30 +69,35 @@ export default function Home() {
     return [
       {
         'title': 'Japanese Reviews',
+        'slug': 'japanese-reviews',
         'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Learn the Japanese language by guessing meanings and readings of Kanjis. Vocabulary powered by the Wanikani dictionary.',
         'technologies': ['nextjs', 'mongodb', 'react'],
       },
       {
-        'title': 'EVA',
+        'title': 'EVA TTS Lip Sync',
+        'slug': 'eva-tts-lip-sync',
         'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Concept avatar with text-to-speech capabilities and lip syncing. Uses the Raylib library to draw the UI and handle animations',
         'technologies': ['python'],
       },
       {
         'title': 'Martian Chess',
+        'slug': 'martian-chess',
         'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Implementation of the Martian Chess board game from Looney Labs built with the Godot game engine',
         'technologies': ['godot'],
       },
       {
         'title': 'Trader Bot',
+        'slug': 'trader-bot',
         'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Trading and Backtesting engine. Implement your own trading strategy in python and automatically place trades on various exchanges.',
         'technologies': ['python'],
       },
       {
         'title': 'Showroom',
+        'slug': 'showroom',
         'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'This website. Created with the Next.js framework. Feel free to use this template.',
         'technologies': ['nextjs', 'react'],
@@ -107,18 +109,7 @@ export default function Home() {
 
     <Grid container>
 
-      <Grid item xs={12} >
-        <header>
-          <div className="header">
-            <a href="#home" className="logo header_logo">{process.env.NEXT_PUBLIC_PERSONAL_NAME}</a>
-            <div className="header-right">
-              <Link href="#home">Home</Link>
-              <Link href="#about">About</Link>
-              <Link href="#projects">Projects</Link>
-            </div>
-          </div>
-        </header>
-      </Grid>
+      <Header/>
 
 
       <Grid item xs={12}>
@@ -235,47 +226,7 @@ export default function Home() {
         </section>
       </Grid>
 
-
-      <Grid item xs={12}>
-        <footer>
-          <Grid container justifyContent="center">
-            <Grid item xs={8}>
-              <Grid container justifyContent="space-between" alignItems="center">
-
-                <Grid item xs={4} className="footer_copyright">
-                  &#169; Copyright {new Date().getFullYear()} {process.env.NEXT_PUBLIC_PERSONAL_NAME}
-                </Grid>
-
-                <Grid item xs={8}>
-                  <Grid container justifyContent="flex-end" alignItems="center">
-                    <Grid item xs={3} md={2} lg={1} className='footer-social'>
-                      <a target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>
-                        <Image
-                          src="/img/social/linkedin-logo.png"
-                          width={60}
-                          height={60}
-                          alt="Lorenzo LinkedIn Profile"
-                        />
-                      </a>
-                    </Grid>
-                    <Grid item xs={3} md={2} lg={1} className='footer-social'>
-                      <a target="_blank" href={process.env.NEXT_PUBLIC_GITHUB_URL}>
-                        <Image
-                          src="/img/social/github-logo.png"
-                          width={60}
-                          height={60}
-                          alt="Lorenzo GitHub Profile"
-                        />
-                      </a>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </footer>
-
-      </Grid>
+      <Footer/>
 
     </Grid >
 

@@ -12,6 +12,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import Image from 'next/image';
 import { Grid } from '@mui/material';
+import Link from 'next/link';
 
 
 
@@ -40,60 +41,59 @@ export default function ProjectCard({ project }) {
     });
 
     return (
-        <Card className='project_card'>
-            {/* <CardHeader
-                title="Project short desc"
-            /> */}
-            <CardMedia
-                component="img"
-                height="194"
-                image={project.image}
-                alt="Project image Alt"
-            />
-            <CardContent>
-                <Typography style={{ textAlign: "left", minHeight: "5em" }}>
-                    {project.description}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Grid item xs={12}>
-                    <Grid container justifyContent="space-between">
-                        <Grid item xs={6}>
-                            <Grid container justifyContent="flex-start">
-                                {
-                                    project.technologies.map(
-                                        tech => {
-                                            const technologyEntry = TECH_LOGOS_MAP.get(tech)
-                                            return (
-                                                <div key={tech} className="tooltip">
-                                                    <span className="tooltiptext">{technologyEntry.tooltip}</span>
-                                                    <Image
-                                                        src={technologyEntry.logo}
-                                                        width={40}
-                                                        height={40}
-                                                        alt={technologyEntry.tooltip}
-                                                        className="technology-logo"
-                                                    />
-                                                </div>
-                                            )
-                                        }
-                                    )
-                                }
+        <Link href={`/project/${project.slug}`}>
+            <Card className='project_card'>
+                <CardMedia
+                    component="img"
+                    height="194"
+                    image={project.image}
+                    alt="Project image Alt"
+                />
+                <CardContent>
+                    <Typography style={{ textAlign: "left", minHeight: "5em" }}>
+                        {project.description}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Grid item xs={12}>
+                        <Grid container justifyContent="space-between">
+                            <Grid item xs={6}>
+                                <Grid container justifyContent="flex-start">
+                                    {
+                                        project.technologies.map(
+                                            tech => {
+                                                const technologyEntry = TECH_LOGOS_MAP.get(tech)
+                                                return (
+                                                    <div key={tech} className="tooltip">
+                                                        <span className="tooltiptext">{technologyEntry.tooltip}</span>
+                                                        <Image
+                                                            src={technologyEntry.logo}
+                                                            width={40}
+                                                            height={40}
+                                                            alt={technologyEntry.tooltip}
+                                                            className="technology-logo"
+                                                        />
+                                                    </div>
+                                                )
+                                            }
+                                        )
+                                    }
+                                </Grid>
+                            </Grid>
+                            <Grid item xs={1}>
+                                <Image
+                                    src="/img/chevron-right.svg"
+                                    width={40}
+                                    height={40}
+                                    alt="Go to project"
+                                    className="certification-zoom"
+                                />
                             </Grid>
                         </Grid>
-                        <Grid item xs={1}>
-                            <Image
-                                src="/img/chevron-right.svg"
-                                width={40}
-                                height={40}
-                                alt="Go to project"
-                                className="certification-zoom"
-                            />
-                        </Grid>
                     </Grid>
-                </Grid>
-            </CardActions>
+                </CardActions>
 
-        </Card>
+            </Card>
+        </Link>
     );
 }

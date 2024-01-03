@@ -4,11 +4,18 @@ import Link from "next/link";
 const Header = () => {
 
   return (
-    <Grid container justifyContent="flex-end" alignItems="flex-end">
-      <Grid item xs={1}><Link className="header_link" href="/about">About</Link></Grid>
-      <Grid item xs={1}><Link className="header_link" href="/about">About</Link></Grid>
-      <Grid item xs={1}><Link className="header_link" href="/about">About</Link></Grid>
-    </Grid>
+    <Grid item xs={12} >
+        <header>
+          <div className="header">
+            <a href="/" className="logo header_logo">{process.env.NEXT_PUBLIC_PERSONAL_NAME}</a>
+            <div className="header-right">
+              <Link href="/#home">Home</Link>
+              <Link href="/#about">About</Link>
+              <Link href="/#projects">Projects</Link>
+            </div>
+          </div>
+        </header>
+      </Grid>
   );
 };
 
