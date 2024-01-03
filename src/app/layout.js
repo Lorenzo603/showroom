@@ -25,13 +25,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="wrapper">
-            <Header />
+          <Header />
 
-            <Grid item xs={12} className="page-body">
-              {children}
-            </Grid >
+          <Grid item xs={12} className="page-body">
+            {children}
+          </Grid >
 
-            <Footer />
+          <Footer />
         </div>
       </body>
     </html>
