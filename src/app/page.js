@@ -109,9 +109,9 @@ export default function Home() {
 
       <Grid item xs={12} >
         <header>
-          <div class="header">
+          <div className="header">
             <a href="#home" className="logo header_logo">{process.env.NEXT_PUBLIC_PERSONAL_NAME}</a>
-            <div class="header-right">
+            <div className="header-right">
               <Link href="#home">Home</Link>
               <Link href="#about">About</Link>
               <Link href="#projects">Projects</Link>
@@ -125,7 +125,7 @@ export default function Home() {
         <section id="home">
           <Grid container direction="column" justifyContent="center" className='hero_content'>
             <Grid item xs={1}>
-              <span className='hero_primary'>Hi, I'm Lorenzo</span>
+              <h1 className='hero_primary'>Hi, I'm Lorenzo</h1>
             </Grid>
             <Grid item xs={1}>
               <span className='hero_secondary'>I develop all kind of applications, some professionally, some for fun!</span>
