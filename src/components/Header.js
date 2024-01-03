@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
 
   return (
-    <Grid item xs={12} >
+    <Grid item xs={12} className="page-header">
         <header>
           <div className="header">
             <a href="/" className="logo header_logo">{process.env.NEXT_PUBLIC_PERSONAL_NAME}</a>

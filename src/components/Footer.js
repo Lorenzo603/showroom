@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
 
-    <Grid item xs={12}>
+    <Grid item xs={12} className="page-footer">
       <footer>
         <Grid container justifyContent="center">
           <Grid item xs={8}>
