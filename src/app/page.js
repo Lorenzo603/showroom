@@ -1,7 +1,5 @@
 import styles from './page.module.css'
 import ProjectCard from '../components/ProjectCard'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { Grid } from '@mui/material';
 import HomeIntro from '@/components/HomeIntro';
 import CertificationBadge from '@/components/CertificationBadge';
@@ -106,11 +104,7 @@ export default function Home() {
   }
 
   return (
-
-    <Grid container>
-
-      <Header/>
-
+    <>
 
       <Grid item xs={12}>
         <section id="home">
@@ -134,7 +128,7 @@ export default function Home() {
               <h2>About Me</h2>
             </Grid>
             <Grid item xs={10} md={8}>
-              <Grid container justifyContent="space-between" style={{marginBottom: "2em"}}>
+              <Grid container justifyContent="space-between" style={{ marginBottom: "2em" }}>
                 <Grid item xs={12} md={5}>
                   <Grid container direction="column">
                     <Grid item xs={12}>
@@ -226,9 +220,6 @@ export default function Home() {
         </section>
       </Grid>
 
-      <Footer/>
-
-    </Grid >
-
+    </>
   )
 }
