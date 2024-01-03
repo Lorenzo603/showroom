@@ -169,6 +169,14 @@ a {
   text-align: center;
 }
 
+h2 {
+  color: #333;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 2.2;
+}
+
+
 h3 {
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -210,13 +218,6 @@ h3 {
   color: #333;
   background-color: #fafafa;
   text-align: center;
-}
-
-.project_title {
-  color: #333;
-  font-size: 2.2rem;
-  text-align: center;
-  line-height: 2.2;
 }
 
 .project_card {
@@ -289,6 +290,11 @@ h3 {
   background-color: black;
   color: darkgray;
   /* font-weight: 800; */
-  text-align: center;
+  text-align: left;
   padding: 3.5em;
+  padding-left: 0;
+}
+
+.footer-social {
+  margin-right: 1em;
 }

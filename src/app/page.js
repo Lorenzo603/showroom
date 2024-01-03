@@ -149,7 +149,7 @@ export default function Home() {
         <section id="about">
           <Grid container justifyContent="center" className='about_content'>
             <Grid item xs={12}>
-              <span className="about_title">About Me</span>
+              <h2>About Me</h2>
             </Grid>
             <Grid item xs={8}>
               <Grid container justifyContent="space-between">
@@ -226,7 +226,7 @@ export default function Home() {
         <section id="projects">
           <Grid container justifyContent="center" className='project_content'>
             <Grid item xs={12}>
-              <span className="project_title">My personal projects</span>
+              <h2>My personal projects</h2>
             </Grid>
             <Grid item xs={10} style={{ marginBottom: "5em" }}>
               <Grid container spacing={4}>
@@ -251,11 +251,13 @@ export default function Home() {
             <Grid item xs={8}>
               <Grid container justifyContent="space-between" alignItems="center">
 
-                <Grid item xs={3} className="footer_copyright">&#169; Copyright {new Date().getFullYear()} {process.env.NEXT_PUBLIC_PERSONAL_NAME}</Grid>
+                <Grid item xs={4} className="footer_copyright">
+                  &#169; Copyright {new Date().getFullYear()} {process.env.NEXT_PUBLIC_PERSONAL_NAME}
+                </Grid>
 
-                <Grid item xs={9}>
+                <Grid item xs={8}>
                   <Grid container justifyContent="flex-end" alignItems="center">
-                    <Grid item xs={1} className="footer_social">
+                    <Grid item xs={1} className='footer-social'>
                       <a target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>
                         <Image
                           src="/img/social/linkedin-logo.png"
@@ -265,7 +267,7 @@ export default function Home() {
                         />
                       </a>
                     </Grid>
-                    <Grid item xs={1} className="footer_social">
+                    <Grid item xs={1} className='footer-social'>
                       <a target="_blank" href={process.env.NEXT_PUBLIC_GITHUB_URL}>
                         <Image
                           src="/img/social/github-logo.png"
