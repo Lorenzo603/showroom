@@ -143,7 +143,7 @@ export default function Home() {
               <h2>About Me</h2>
             </Grid>
             <Grid item xs={10} md={8}>
-              <Grid container justifyContent="space-between">
+              <Grid container justifyContent="space-between" style={{marginBottom: "2em"}}>
                 <Grid item xs={12} md={5}>
                   <Grid container direction="column">
                     <Grid item xs={12}>
@@ -168,8 +168,8 @@ export default function Home() {
                       </Grid>
                     </Grid>
                   </Grid>
-
                 </Grid>
+
                 <Grid item xs={12} md={6}>
                   <Grid container direction="column">
                     <Grid item xs={12}>
