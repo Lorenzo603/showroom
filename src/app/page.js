@@ -151,9 +151,9 @@ export default function Home() {
             <Grid item xs={12}>
               <h2>About Me</h2>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={10} md={8}>
               <Grid container justifyContent="space-between">
-                <Grid item xs={5}>
+                <Grid item xs={12} md={5}>
                   <Grid container direction="column">
                     <Grid item xs={12}>
                       <Grid container justifyContent="flex-start">
@@ -179,7 +179,7 @@ export default function Home() {
                   </Grid>
 
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                   <Grid container direction="column">
                     <Grid item xs={12}>
                       <Grid container justifyContent="flex-start">
@@ -257,7 +257,7 @@ export default function Home() {
 
                 <Grid item xs={8}>
                   <Grid container justifyContent="flex-end" alignItems="center">
-                    <Grid item xs={1} className='footer-social'>
+                    <Grid item xs={3} md={2} lg={1} className='footer-social'>
                       <a target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>
                         <Image
                           src="/img/social/linkedin-logo.png"
@@ -267,7 +267,7 @@ export default function Home() {
                         />
                       </a>
                     </Grid>
-                    <Grid item xs={1} className='footer-social'>
+                    <Grid item xs={3} md={2} lg={1} className='footer-social'>
                       <a target="_blank" href={process.env.NEXT_PUBLIC_GITHUB_URL}>
                         <Image
                           src="/img/social/github-logo.png"
