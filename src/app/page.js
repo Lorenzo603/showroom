@@ -7,6 +7,7 @@ import { Box, Grid } from '@mui/material';
 import HomeIntro from '@/components/HomeIntro';
 import CertificationBadge from '@/components/CertificationBadge';
 import Link from 'next/link';
+import HamburgerMenu from '@/components/HamburgerMenu';
 
 export default function Home() {
 
@@ -71,31 +72,31 @@ export default function Home() {
     return [
       {
         'title': 'Japanese Reviews',
-        'image': '/img/project-japanese-reviews-next.png',
+        'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Learn the Japanese language by guessing meanings and readings of Kanjis. Vocabulary powered by the Wanikani dictionary.',
         'technologies': ['nextjs', 'mongodb', 'react'],
       },
       {
         'title': 'EVA',
-        'image': '/img/project-japanese-reviews-next.png',
+        'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Concept avatar with text-to-speech capabilities and lip syncing. Uses the Raylib library to draw the UI and handle animations',
         'technologies': ['python'],
       },
       {
         'title': 'Martian Chess',
-        'image': '/img/project-japanese-reviews-next.png',
+        'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Implementation of the Martian Chess board game from Looney Labs built with the Godot game engine',
         'technologies': ['godot'],
       },
       {
         'title': 'Trader Bot',
-        'image': '/img/project-japanese-reviews-next.png',
+        'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'Trading and Backtesting engine. Implement your own trading strategy in python and automatically place trades on various exchanges.',
         'technologies': ['python'],
       },
       {
         'title': 'Showroom',
-        'image': '/img/project-japanese-reviews-next.png',
+        'image': '/img/projects/project-japanese-reviews-next.png',
         'description': 'This website. Created with the Next.js framework. Feel free to use this template.',
         'technologies': ['nextjs', 'react'],
       },
@@ -116,6 +117,7 @@ export default function Home() {
 
                 <Grid item xs={10}>
                   <Grid container justifyContent="flex-end" alignItems="center">
+                    <div className="hamburger"><HamburgerMenu/></div>
                     <Link href="#home" className='header_link'>Home</Link>
                     <Link href="#about" className='header_link'>About</Link>
                     <Link href="#projects" className='header_link'>Projects</Link>
@@ -190,7 +192,7 @@ export default function Home() {
                       <Grid container justifyContent="flex-start">
                         {getSkills().map(skill => {
                           return (
-                            <span key={skill} className='skill'>{skill.name}</span>
+                            <span key={skill.name} className='skill'>{skill.name}</span>
                           );
                         })}
                       </Grid>

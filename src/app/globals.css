@@ -120,6 +120,38 @@ a {
   color: black;
 }
 
+/* Hamburger for smaller screens */
+@media only screen and (min-width: 701px) {
+
+  /* hide the hamburger */
+  .hamburger {
+    display: none;
+  }
+
+  /* show all the nav-buttons */
+  .nav-button {
+    display: block;
+  }
+}
+
+/* if browser window is small (max-width) */
+@media only screen and (max-width: 700px) {
+
+  /* show everything with the hamburger class */
+  .hamburger {
+    display: block;
+  }
+
+  /* hide all the heaeder-links */
+  .header_link {
+    display: none;
+  }
+}
+
+.hamburger-image {
+  filter: invert(100%);
+}
+
 /* Hero Content */
 
 .hero_content {

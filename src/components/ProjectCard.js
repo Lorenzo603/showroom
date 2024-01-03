@@ -56,9 +56,9 @@ export default function ProjectCard({ project }) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Grid xs={12}>
+                <Grid item xs={12}>
                     <Grid container justifyContent="space-between">
-                        <Grid xs={6}>
+                        <Grid item xs={6}>
                             <Grid container justifyContent="flex-start">
                                 {
                                     project.technologies.map(
@@ -81,7 +81,7 @@ export default function ProjectCard({ project }) {
                                 }
                             </Grid>
                         </Grid>
-                        <Grid xs={1}>
+                        <Grid item xs={1}>
                             <Image
                                 src="/img/chevron-right.svg"
                                 width={40}
