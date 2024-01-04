@@ -316,18 +316,33 @@ h3 {
 
 /* Footer */
 
-.footer_copyright {
-  background-color: black;
-  color: darkgray;
-  /* font-weight: 800; */
-  text-align: left;
-  padding: 3.5em;
-  padding-left: 0;
+footer {
+  display: flex;
+  justify-content: center;
 }
 
-.footer-social {
-  margin-right: 1em;
+.footer {
+  overflow: hidden;
+  background-color: black;
+  justify-content: space-between;
+  display: flex;
 }
+
+.footer-copyright {
+  color: darkgrey;
+  text-align: center;
+  align-self: center;
+  padding: 2em;
+}
+
+.footer a {
+  padding: 1em;
+}
+
+.footer-right {
+  align-self: center;
+}
+
 
 /* Sticky Footer*/
 .wrapper {

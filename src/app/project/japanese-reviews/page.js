@@ -1,5 +1,7 @@
 import { Grid } from "@mui/material";
 import styles from "./styles.module.css"
+import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectPage({ params }) {
 
@@ -14,19 +16,26 @@ export default function ProjectPage({ params }) {
         <Grid item xs={12}>
             <section className={styles.project_content}>
                 <Grid container justifyContent="center">
-                    <Grid item xs={10}>
+                    <Grid item xs={6}>
                         <Grid container direction="column">
 
                             <h1 className={styles.project_h1}>Japanese Reviews</h1>
 
-                            <p>Short description asdjaoicjhdowifmwivmw. ...</p>
+                            <p>
+                                This application allows to perform <Link target="_blank" href="https://www.wanikani.com/">Wanikani</Link> reviews at any time.
+                                Select the level and the kind of quiz you want, you can review readings and meanings of kanjis or vocabularies.
+                                It has a built-in SRS system for the words you get wrong.
+                            </p>
 
                             <h2 className={styles.project_h2}>Features</h2>
-                            <p>Multiple review modes</p>
+                            <h3>Multiple review modes</h3>
+                            <p>Start from kanji prompt and input reading or meaning, or start from English prompt and input the Kanji reading.</p>
 
-                            <p>Visually similar kanjis</p>
+                            <h3>Visually similar kanjis</h3>
+                            <p>Practice only the Kanjis that are visually similar to each other.</p>
 
-                            <p>Focus mode</p>
+                            <h3>Focus mode</h3>
+                            <p>Hide statistics about the current session for total immersion and focus.</p>
 
                             <h2 className={styles.project_h2}>Future improvements</h2>
                             <ul>
@@ -45,6 +54,19 @@ export default function ProjectPage({ params }) {
                                     })}
                                 </Grid>
                             </Grid>
+
+                            <h2 className={styles.project_h2}>Links</h2>
+                            <Link target="_blank" href="https://github.com/Lorenzo603/japanese-reviews-next">
+                                <Image
+                                    src="/img/social/github-logo-black.png"
+                                    width={40}
+                                    height={40}
+                                    alt="Japanese Reviews GitHub link"
+                                />
+                            </Link>
+                            <Link target="_blank" href="https://github.com/Lorenzo603/japanese-reviews-next">
+                                https://github.com/Lorenzo603/japanese-reviews-next
+                            </Link>
                         </Grid>
                     </Grid>
                 </Grid>
