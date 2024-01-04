@@ -5,8 +5,38 @@
 h1.project_h1 {
   font-size: 2.2em;
   text-align: center;
+  padding: 1em;
 }
 
 h2.project_h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
+  text-align: left;
+  padding: 0.5em;
+}
+
+.project_section {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.project_content p,
+.project_content ul {
+  font-size: 1.3em;
+  line-height: 1.3;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.project_content img {
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px #515151;
+}
+
+.project_content a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.project_content a img {
+  margin-right: 1em;
 }
