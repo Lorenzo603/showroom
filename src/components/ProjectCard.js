@@ -32,6 +32,20 @@ export default function ProjectCard({ project }) {
         'logo': '/img/techs/godot-logo.svg',
         'tooltip': 'Godot',
     });
+    TECH_LOGOS_MAP.set('hashicorp-vault', {
+        'logo': '/img/techs/hashicorp-vault-logo.svg',
+        'tooltip': 'HashiCorp Vault',
+    });
+    TECH_LOGOS_MAP.set('metamask', {
+        'logo': '/img/techs/metamask-logo.svg',
+        'tooltip': 'MetaMask',
+    });
+    TECH_LOGOS_MAP.set('raylib', {
+        'logo': '/img/techs/raylib-logo.png',
+        'tooltip': 'raylib',
+    });
+
+
 
     return (
         <Link href={`/project/${project.slug}`}>

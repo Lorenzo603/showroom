@@ -8,7 +8,7 @@ export default function ProjectPage({ params }) {
 
     function getTechnologies() {
         return [
-            'Python', 'raylib', 'pyttsx3', 'Sqlite'
+            'Godot',
         ]
     }
 
@@ -20,23 +20,20 @@ export default function ProjectPage({ params }) {
                     <Grid item xs={8}>
                         <Grid container direction="column">
 
-                            <h1 className={styles.project_h1}>EVA - Text-to-speech with Lip Sync</h1>
+                            <h1 className={styles.project_h1}>Martian Chess</h1>
                             <Grid container justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={8}>
                                     <p>
-                                        You can input text in the box and Eva will speak it back!
-                                        Pronounciation data is fetched either from the phonemes of the Dictionary API or Google pronounciation.
+                                        Implementation of the fantastic Martian CHess game from <Link target="_blank" href="https://store.looneylabs.com/">Looney Labs</Link>!
+                                        Play against another human or against 3 AI variations.
                                     </p>
                                 </Grid>
                             </Grid>
 
                             <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={12} md={12} lg={4}>
-                                    <h3>Text-to-speech</h3>
-                                    <p>Uses either the <Link target="_blank" href="https://pypi.org/project/pyttsx3/">pyttsx3</Link> library or the OSX native "say" command.</p>
-
-                                    <h3>Graphics</h3>
-                                    <p>Uses the python binding for raylib to draw everything on the screen and manage animations and input box with word-wrapping.</p>
+                                    <h3>Godot Game Engine</h3>
+                                    <p>Implemented with the <Link target="_blank" href="https://godotengine.org/">Godot Game Engine</Link>, you can choose between 2D or 3D perspectives.</p>
 
                                 </Grid>
                                 <Grid item xs={12} md={12} lg={8}>
@@ -63,11 +60,8 @@ export default function ProjectPage({ params }) {
                                 </Grid>
                                 <Grid item xs={12} md={12} lg={7}>
 
-                                    <h3>Local caching</h3>
-                                    <p>Phoneme information is cached locally with SQLite using the peewee library.</p>
-
-                                    <h3>Pixel Art</h3>
-                                    <p>Avatar and all poses have been drawn by me using Aseprite. She's supposed to be a Python-girl because the program is written in python, but she looks more like an Orc &#128517;</p>
+                                    <h3>Chess engine adaptation</h3>
+                                    <p>Concepts of standard Chess Engines implementations were adapted to this new game to find the best move taking into account not only the current state of the board but also loking ahead to a number of moves, exploring all the move-tree.</p>
 
                                 </Grid>
                             </Grid>
@@ -75,7 +69,7 @@ export default function ProjectPage({ params }) {
 
                             <h2 className={styles.project_h2}>Future improvements</h2>
                             <ul>
-                                <li>Send the prompt to ChatGPT API and speak back the answer</li>
+                                <li>Implement the 4-Player variation</li>
                             </ul>
 
                             <h2 className={styles.project_h2}>Technologies</h2>
@@ -91,16 +85,16 @@ export default function ProjectPage({ params }) {
 
                             <h2 className={styles.project_h2}>Links</h2>
                             <Grid container alignItems="center" style={{ marginBottom: "2em" }}>
-                                <Link target="_blank" href="https://bitbucket.org/lorenzo_furrer/eva/src/master/">
+                                <Link target="_blank" href="https://github.com/Lorenzo603/martian-chess">
                                     <Image
-                                        src="/img/social/bitbucket-logo.svg"
+                                        src="/img/social/github-logo-black.png"
                                         width={40}
                                         height={40}
-                                        alt="Eva Bitbucket link"
+                                        alt="Martian Chess GitHub link"
                                     />
                                 </Link>
-                                <Link target="_blank" href="https://bitbucket.org/lorenzo_furrer/eva/src/master/">
-                                    https://bitbucket.org/lorenzo_furrer/eva/src/master/
+                                <Link target="_blank" href="https://github.com/Lorenzo603/martian-chess">
+                                    https://github.com/Lorenzo603/martian-chess
                                 </Link>
                             </Grid>
                         </Grid>

@@ -8,7 +8,7 @@ export default function ProjectPage({ params }) {
 
     function getTechnologies() {
         return [
-            'Python', 'raylib', 'pyttsx3', 'Sqlite'
+            'Python', 'GraphQL', 'Hashicorp Vault', 'Web3', 'MetaMask'
         ]
     }
 
@@ -20,23 +20,22 @@ export default function ProjectPage({ params }) {
                     <Grid item xs={8}>
                         <Grid container direction="column">
 
-                            <h1 className={styles.project_h1}>EVA - Text-to-speech with Lip Sync</h1>
+                            <h1 className={styles.project_h1}>Trader Bot</h1>
                             <Grid container justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={8}>
                                     <p>
-                                        You can input text in the box and Eva will speak it back!
-                                        Pronounciation data is fetched either from the phonemes of the Dictionary API or Google pronounciation.
+                                        Backtest trading strategies and place real orders on Crypto and Stock exchanges.
                                     </p>
                                 </Grid>
                             </Grid>
 
                             <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={12} md={12} lg={4}>
-                                    <h3>Text-to-speech</h3>
-                                    <p>Uses either the <Link target="_blank" href="https://pypi.org/project/pyttsx3/">pyttsx3</Link> library or the OSX native "say" command.</p>
+                                    <h3>Fetch Data</h3>
+                                    <p>Fetch latest market data and place orders on many exchanges: Binance, Kucoin, Coinbase, Alpaca, Dydx.</p>
 
-                                    <h3>Graphics</h3>
-                                    <p>Uses the python binding for raylib to draw everything on the screen and manage animations and input box with word-wrapping.</p>
+                                    <h3>Backtest</h3>
+                                    <p>Write your own strategies to backtest and apply to live trading.</p>
 
                                 </Grid>
                                 <Grid item xs={12} md={12} lg={8}>
@@ -63,23 +62,40 @@ export default function ProjectPage({ params }) {
                                 </Grid>
                                 <Grid item xs={12} md={12} lg={7}>
 
-                                    <h3>Local caching</h3>
-                                    <p>Phoneme information is cached locally with SQLite using the peewee library.</p>
+                                    <h3>DeFi integrations</h3>
+                                    <p>Fetch pool data from Uniswap and options data from Lyra.</p>
 
-                                    <h3>Pixel Art</h3>
-                                    <p>Avatar and all poses have been drawn by me using Aseprite. She's supposed to be a Python-girl because the program is written in python, but she looks more like an Orc &#128517;</p>
+                                    <h3>Liquidity visualization</h3>
+                                    <p>Visualize Uniswap Pool data liquidity in 2D and 3D.</p>
 
                                 </Grid>
                             </Grid>
 
+                            <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
+                                <Grid item xs={12} md={12} lg={4}>
+                                    <h3>Stock Screener</h3>
+                                    <p>Apply signal strategy to all tickers in single view</p>
 
-                            <h2 className={styles.project_h2}>Future improvements</h2>
-                            <ul>
-                                <li>Send the prompt to ChatGPT API and speak back the answer</li>
-                            </ul>
+                                    <h3>Forex sentiment analysis</h3>
+                                    <p>Analyze Forex sentiment data.</p>
+
+                                    <h3>Secure Storage</h3>
+                                    <p>Sensitive keys stored in local <Link target="_blank" href="https://www.hashicorp.com/products/vault">HashiCorp Vault</Link>.</p>
+
+                                </Grid>
+                                <Grid item xs={12} md={12} lg={8}>
+                                    <Grid container justifyContent="center">
+                                        <ProjectImage
+                                            imageSrc="/img/projects/japanese-reviews/project-japanese-reviews-next.png"
+                                            imageAlt="Japanese Reviews Main Screen"
+                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                        />
+                                    </Grid>
+                                </Grid>
+                            </Grid>
 
                             <h2 className={styles.project_h2}>Technologies</h2>
-                            <Grid item xs={12}>
+                            <Grid item xs={12} style={{marginBottom: "2em"}}>
                                 <Grid container justifyContent="flex-start">
                                     {getTechnologies().map(tech => {
                                         return (
@@ -89,20 +105,6 @@ export default function ProjectPage({ params }) {
                                 </Grid>
                             </Grid>
 
-                            <h2 className={styles.project_h2}>Links</h2>
-                            <Grid container alignItems="center" style={{ marginBottom: "2em" }}>
-                                <Link target="_blank" href="https://bitbucket.org/lorenzo_furrer/eva/src/master/">
-                                    <Image
-                                        src="/img/social/bitbucket-logo.svg"
-                                        width={40}
-                                        height={40}
-                                        alt="Eva Bitbucket link"
-                                    />
-                                </Link>
-                                <Link target="_blank" href="https://bitbucket.org/lorenzo_furrer/eva/src/master/">
-                                    https://bitbucket.org/lorenzo_furrer/eva/src/master/
-                                </Link>
-                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

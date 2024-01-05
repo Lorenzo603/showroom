@@ -77,7 +77,7 @@ export default function Home() {
         'slug': 'eva-tts-lip-sync',
         'image': '/img/projects/japanese-reviews/project-japanese-reviews-next.png',
         'description': 'Concept avatar with text-to-speech capabilities and lip syncing. Uses the Raylib library to draw the UI and handle animations',
-        'technologies': ['python'],
+        'technologies': ['python', 'raylib'],
       },
       {
         'title': 'Martian Chess',
@@ -91,7 +91,7 @@ export default function Home() {
         'slug': 'trader-bot',
         'image': '/img/projects/japanese-reviews/project-japanese-reviews-next.png',
         'description': 'Trading and Backtesting engine. Implement your own trading strategy in python and automatically place trades on various exchanges.',
-        'technologies': ['python'],
+        'technologies': ['python', 'hashicorp-vault', 'metamask'],
       },
       {
         'title': 'Showroom',
