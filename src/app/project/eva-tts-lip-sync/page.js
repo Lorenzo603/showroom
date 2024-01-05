@@ -8,7 +8,7 @@ export default function ProjectPage({ params }) {
 
     function getTechnologies() {
         return [
-            'Next.js', 'React', 'MongoDB', 'Bootstrap'
+            'Python', 'raylib', 'TTS'
         ]
     }
 
@@ -20,7 +20,7 @@ export default function ProjectPage({ params }) {
                     <Grid item xs={8}>
                         <Grid container direction="column">
 
-                            <h1 className={styles.project_h1}>Japanese Reviews</h1>
+                            <h1 className={styles.project_h1}>EVA - Text-to-speech with Lip Sync</h1>
                             <Grid container justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={8}>
                                     <p>
@@ -95,7 +95,7 @@ export default function ProjectPage({ params }) {
                             </Grid>
 
                             <h2 className={styles.project_h2}>Links</h2>
-                            <Grid container alignItems="center" style={{ marginBottom: "2em" }}>
+                            {/* <Grid container alignItems="center" style={{ marginBottom: "2em" }}>
                                 <Link target="_blank" href="https://github.com/Lorenzo603/japanese-reviews-next">
                                     <Image
                                         src="/img/social/github-logo-black.png"
@@ -107,7 +107,7 @@ export default function ProjectPage({ params }) {
                                 <Link target="_blank" href="https://github.com/Lorenzo603/japanese-reviews-next">
                                     https://github.com/Lorenzo603/japanese-reviews-next
                                 </Link>
-                            </Grid>
+                            </Grid> */}
                         </Grid>
                     </Grid>
                 </Grid>

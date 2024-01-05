@@ -1,19 +1,12 @@
 import * as React from 'react';
-
 import Card from '@mui/material/Card';
-
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import Image from 'next/image';
 import { Grid } from '@mui/material';
 import Link from 'next/link';
-
 
 
 export default function ProjectCard({ project }) {
