@@ -30,41 +30,43 @@ export default function ProjectPage({ params }) {
                                 </Grid>
                             </Grid>
 
+                            <Grid item xs={12}>
+                                <Grid container justifyContent="center" className={styles.project_section}>
+                                    <ProjectImage
+                                        imageSrc="/img/projects/martian-chess/martian-chess-3d.png"
+                                        imageAlt="Martian Chess 3D Version"
+                                        imageSizes="100vw"
+                                    />
+                                </Grid>
+                            </Grid>
+
+                            <Grid container justifyContent="center" className={styles.project_section}>
+                                <Grid item xs={8}>
+                                    <h2 className={styles.project_h2}>Chess engine adaptation</h2>
+                                    <p>
+                                        Concepts of standard Chess Engines implementations were adapted to this new game to find the best move taking into account not only the current state of the board but also loking ahead to a number of moves, exploring all the move-tree.
+                                    </p>
+
+                                </Grid>
+                            </Grid>
+
                             <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={12} md={12} lg={4}>
                                     <h3>Godot Game Engine</h3>
                                     <p>Implemented with the <Link target="_blank" href="https://godotengine.org/">Godot Game Engine</Link>, you can choose between 2D or 3D perspectives.</p>
 
                                 </Grid>
-                                <Grid item xs={12} md={12} lg={8}>
+                                <Grid item xs={12} md={12} lg={4}>
                                     <Grid container justifyContent="center">
                                         <ProjectImage
-                                            imageSrc="/img/projects/japanese-reviews/project-japanese-reviews-next.png"
-                                            imageAlt="Japanese Reviews Main Screen"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                            imageSrc="/img/projects/martian-chess/martian-chess-2d.png"
+                                            imageAlt="Martian Chess 2D Version"
+                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
                                         />
                                     </Grid>
                                 </Grid>
                             </Grid>
 
-
-                            <Grid container justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={12} md={12} lg={5}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/japanese-reviews/correct-answer.png"
-                                            imageAlt="Japanese Reviews Correct Answer"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
-                                        />
-                                    </Grid>
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={7}>
-
-                                    <h3>Chess engine adaptation</h3>
-                                    <p>Concepts of standard Chess Engines implementations were adapted to this new game to find the best move taking into account not only the current state of the board but also loking ahead to a number of moves, exploring all the move-tree.</p>
-
-                                </Grid>
-                            </Grid>
 
 
                             <h2 className={styles.project_h2}>Future improvements</h2>

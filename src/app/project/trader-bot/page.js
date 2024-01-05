@@ -8,7 +8,7 @@ export default function ProjectPage({ params }) {
 
     function getTechnologies() {
         return [
-            'Python', 'GraphQL', 'Hashicorp Vault', 'Web3', 'MetaMask'
+            'Python', 'GraphQL', 'Hashicorp Vault', 'Web3', 'MetaMask', 'Websockets'
         ]
     }
 
@@ -25,42 +25,25 @@ export default function ProjectPage({ params }) {
                                 <Grid item xs={8}>
                                     <p>
                                         Backtest trading strategies and place real orders on Crypto and Stock exchanges.
+                                        Connects with both REST and Websockets APIs.
+                                        Fetch latest or historical market data and place orders on many exchanges: Binance, Kucoin, Coinbase, Alpaca, Dydx.
+                                        Write your own strategies to backtest and apply to live trading.
                                     </p>
+                                </Grid>
+                            </Grid>
+
+                            <Grid item xs={12}>
+                                <Grid container justifyContent="center" className={styles.project_section}>
+                                    <ProjectImage
+                                        imageSrc="/img/projects/trader-bot/liquidity-3d.png"
+                                        imageAlt="Uniswap Liquidity 3D"
+                                        imageSizes="100vw"
+                                    />
                                 </Grid>
                             </Grid>
 
                             <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={12} md={12} lg={4}>
-                                    <h3>Fetch Data</h3>
-                                    <p>Fetch latest market data and place orders on many exchanges: Binance, Kucoin, Coinbase, Alpaca, Dydx.</p>
-
-                                    <h3>Backtest</h3>
-                                    <p>Write your own strategies to backtest and apply to live trading.</p>
-
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={8}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/japanese-reviews/project-japanese-reviews-next.png"
-                                            imageAlt="Japanese Reviews Main Screen"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
-                                        />
-                                    </Grid>
-                                </Grid>
-                            </Grid>
-
-
-                            <Grid container justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={12} md={12} lg={5}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/japanese-reviews/correct-answer.png"
-                                            imageAlt="Japanese Reviews Correct Answer"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
-                                        />
-                                    </Grid>
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={7}>
 
                                     <h3>DeFi integrations</h3>
                                     <p>Fetch pool data from Uniswap and options data from Lyra.</p>
@@ -69,10 +52,29 @@ export default function ProjectPage({ params }) {
                                     <p>Visualize Uniswap Pool data liquidity in 2D and 3D.</p>
 
                                 </Grid>
+                                <Grid item xs={12} md={12} lg={6}>
+                                    <Grid container justifyContent="center">
+                                        <ProjectImage
+                                            imageSrc="/img/projects/trader-bot/liquidity-2d.png"
+                                            imageAlt="Trader Bot Liquidity 2D"
+                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  50vw"
+                                        />
+                                    </Grid>
+                                </Grid>
                             </Grid>
 
+
                             <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={12} md={12} lg={4}>
+                                <Grid item xs={12} md={12} lg={6}>
+                                    <Grid container justifyContent="center">
+                                        <ProjectImage
+                                            imageSrc="/img/projects/trader-bot/forex-sentiment.png"
+                                            imageAlt="Japanese Reviews Main Screen"
+                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                        />
+                                    </Grid>
+                                </Grid>
+                                <Grid item xs={12} md={12} lg={6}>
                                     <h3>Stock Screener</h3>
                                     <p>Apply signal strategy to all tickers in single view</p>
 
@@ -83,19 +85,10 @@ export default function ProjectPage({ params }) {
                                     <p>Sensitive keys stored in local <Link target="_blank" href="https://www.hashicorp.com/products/vault">HashiCorp Vault</Link>.</p>
 
                                 </Grid>
-                                <Grid item xs={12} md={12} lg={8}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/japanese-reviews/project-japanese-reviews-next.png"
-                                            imageAlt="Japanese Reviews Main Screen"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
-                                        />
-                                    </Grid>
-                                </Grid>
                             </Grid>
 
                             <h2 className={styles.project_h2}>Technologies</h2>
-                            <Grid item xs={12} style={{marginBottom: "2em"}}>
+                            <Grid item xs={12} style={{ marginBottom: "2em" }}>
                                 <Grid container justifyContent="flex-start">
                                     {getTechnologies().map(tech => {
                                         return (
