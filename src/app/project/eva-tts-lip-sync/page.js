@@ -8,7 +8,7 @@ export default function ProjectPage({ params }) {
 
     function getTechnologies() {
         return [
-            'Python', 'raylib', 'pyttsx3', 'Sqlite'
+            "Python", "raylib", "pyttsx3", "Sqlite",
         ]
     }
 
@@ -33,7 +33,7 @@ export default function ProjectPage({ params }) {
                             <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={12} md={12} lg={4}>
                                     <h3>Text-to-speech</h3>
-                                    <p>Uses either the <Link target="_blank" href="https://pypi.org/project/pyttsx3/">pyttsx3</Link> library or the OSX native "say" command.</p>
+                                    <p>Uses either the <Link target="_blank" href="https://pypi.org/project/pyttsx3/">pyttsx3</Link> library or the OSX native &quot;say&quot; command.</p>
 
                                     <h3>Graphics</h3>
                                     <p>Uses the python binding for raylib to draw everything on the screen and manage animations and input box with word-wrapping.</p>
@@ -67,7 +67,7 @@ export default function ProjectPage({ params }) {
                                     <p>Phoneme information is cached locally with SQLite using the peewee library.</p>
 
                                     <h3>Pixel Art</h3>
-                                    <p>Avatar and all poses have been drawn by me using Aseprite. She's supposed to be a Python-girl because the program is written in python, but she looks more like an Orc &#128517;</p>
+                                    <p>Avatar and all poses have been drawn by me using Aseprite. She&#39;s supposed to be a Python-girl because the program is written in python, but she looks more like an Orc &#128517;</p>
 
                                 </Grid>
                             </Grid>
@@ -83,7 +83,7 @@ export default function ProjectPage({ params }) {
                                 <Grid container justifyContent="flex-start">
                                     {getTechnologies().map(tech => {
                                         return (
-                                            <span key={tech} className='skill'>{tech}</span>
+                                            <span key={tech} className="skill">{tech}</span>
                                         );
                                     })}
                                 </Grid>

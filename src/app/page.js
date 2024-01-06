@@ -45,20 +45,20 @@ export default function Home() {
   function getCertificationBadges() {
     return [
       {
-        'name': 'AWS Security Specialty Certification',
-        'badge': "/img/certifications/aws-security-specialty-badge.png",
+        "name": "AWS Security Specialty Certification",
+        "badge": "/img/certifications/aws-security-specialty-badge.png",
       },
       {
-        'name': 'AWS Solution Architect Associate Certification',
-        'badge': "/img/certifications/aws-solution-architect-associate-badge.png",
+        "name": "AWS Solution Architect Associate Certification",
+        "badge": "/img/certifications/aws-solution-architect-associate-badge.png",
       },
       {
-        'name': 'AWS Developer Associate Certification',
-        'badge': "/img/certifications/aws-developer-associate-badge.png",
+        "name": "AWS Developer Associate Certification",
+        "badge": "/img/certifications/aws-developer-associate-badge.png",
       },
       {
-        'name': 'AWS Cloud Practitioner Certification',
-        'badge': "/img/certifications/aws-cloud-practitioner-badge.png",
+        "name": "AWS Cloud Practitioner Certification",
+        "badge": "/img/certifications/aws-cloud-practitioner-badge.png",
       },
     ]
   }
@@ -110,10 +110,10 @@ export default function Home() {
         <section id="home">
           <Grid container direction="column" justifyContent="center" className='hero_content'>
             <Grid item xs={1}>
-              <h1 className='hero_primary'>Hi, I'm Lorenzo</h1>
+              <h1 className="hero_primary">Hi, I&#39;m Lorenzo</h1>
             </Grid>
             <Grid item xs={1}>
-              <span className='hero_secondary'>I develop all kinds of applications, some professionally, some for fun!</span>
+              <span className="hero_secondary">I develop all kinds of applications, some professionally, some for fun!</span>
             </Grid>
           </Grid>
         </section>
@@ -138,17 +138,17 @@ export default function Home() {
                     </Grid>
                     <Grid item xs={12}>
                       <Grid container justifyContent="flex-start">
-                        <p className='bio'>
-                          I'm a Software Developer with interests in all technologies spanning from scalable <strong>Cloud Architectures</strong> to Videogames.
+                        <p className="bio">
+                          I&#39;m a Software Developer with interests in all technologies spanning from scalable <strong>Cloud Architectures</strong> to Videogames.
                         </p>
-                        <p className='bio'>
-                          In my professional life I work mostly in the Ecommerce field where I've built and designed many <strong>Enterprise Solutions</strong> over the years.
+                        <p className="bio">
+                          In my professional life I work mostly in the Ecommerce field where I&#39;ve built and designed many <strong>Enterprise Solutions</strong> over the years.
                         </p>
-                        <p className='bio'>
+                        <p className="bio">
                           This a website where I collect and share some of the <strong>projects</strong> that I pursue outside of my professional life.
                         </p>
-                        <p className='bio'>
-                          I'm always open to new opportunities where I can learn and grow. Feel free to <strong>contact</strong> me!
+                        <p className="bio">
+                          I&#39;m always open to new opportunities where I can learn and grow. Feel free to <strong>contact</strong> me!
                         </p>
                       </Grid>
                     </Grid>
@@ -166,7 +166,7 @@ export default function Home() {
                       <Grid container justifyContent="flex-start">
                         {getSkills().map(skill => {
                           return (
-                            <span key={skill.name} className='skill'>{skill.name}</span>
+                            <span key={skill.name} className="skill">{skill.name}</span>
                           );
                         })}
                       </Grid>
@@ -200,7 +200,7 @@ export default function Home() {
 
       <Grid item xs={12}>
         <section id="projects">
-          <Grid container justifyContent="center" className='project_content'>
+          <Grid container justifyContent="center" className="project_content">
             <Grid item xs={12}>
               <h2>My personal projects</h2>
             </Grid>
