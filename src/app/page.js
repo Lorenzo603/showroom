@@ -113,7 +113,7 @@ export default function Home() {
               <h1 className='hero_primary'>Hi, I'm Lorenzo</h1>
             </Grid>
             <Grid item xs={1}>
-              <span className='hero_secondary'>I develop all kind of applications, some professionally, some for fun!</span>
+              <span className='hero_secondary'>I develop all kinds of applications, some professionally, some for fun!</span>
             </Grid>
           </Grid>
         </section>
