@@ -42,9 +42,9 @@ export default function ProjectPage({ params }) {
                                 <Grid item xs={12} md={12} lg={8}>
                                     <Grid container justifyContent="center">
                                         <ProjectImage
-                                            imageSrc="/img/projects/japanese-reviews/project-japanese-reviews-next.png"
-                                            imageAlt="Japanese Reviews Main Screen"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                            imageSrc="/img/projects/eva-tts-lip-sync/eva-main-screen.png"
+                                            imageAlt="Eva Main Screen"
+                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
                                         />
                                     </Grid>
                                 </Grid>
@@ -55,9 +55,9 @@ export default function ProjectPage({ params }) {
                                 <Grid item xs={12} md={12} lg={5}>
                                     <Grid container justifyContent="center">
                                         <ProjectImage
-                                            imageSrc="/img/projects/japanese-reviews/correct-answer.png"
-                                            imageAlt="Japanese Reviews Correct Answer"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                            imageSrc="/img/projects/eva-tts-lip-sync/eva-tongue.png"
+                                            imageAlt="Eva Tongue"
+                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
                                         />
                                     </Grid>
                                 </Grid>
