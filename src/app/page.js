@@ -68,7 +68,7 @@ export default function Home() {
       {
         'title': 'Japanese Reviews',
         'slug': 'japanese-reviews',
-        'image': '/img/projects/japanese-reviews/japan-flag.svg',
+        'image': '/img/projects/japanese-reviews/japanese-reviews-intro.png',
         'description': 'Learn the Japanese language by guessing meanings and readings of Kanjis. Vocabulary powered by the Wanikani dictionary.',
         'technologies': ['nextjs', 'mongodb', 'react'],
       },
