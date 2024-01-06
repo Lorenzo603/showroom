@@ -26,7 +26,7 @@ Installing pm2 (only once)
 ```sudo npm install pm2 -g```
 
 Running
-```pm2 --time --name JapaneseReviewsNext start npm -- start```
+```pm2 --time --name showroom start npm -- start```
 
 Listing running processes
 ```pm2 ps```
