@@ -96,8 +96,8 @@ export default function Home() {
       {
         'title': 'Showroom',
         'slug': 'showroom',
-        'image': '/img/projects/japanese-reviews/project-japanese-reviews-next.png',
-        'description': 'This website. Created with the Next.js framework. Feel free to use this template.',
+        'image': '/img/projects/showroom/showroom-title.png',
+        'description': 'This website. Created with the Next.js framework. Feel free to use this as template.',
         'technologies': ['nextjs', 'react'],
       },
     ]
