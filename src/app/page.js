@@ -110,7 +110,7 @@ export default function Home() {
         <section id="home">
           <Grid container direction="column" justifyContent="center" className='hero_content'>
             <Grid item xs={1}>
-              <h1 className='hero_primary'>Hi, I'm <span className="coloured-text">Lorenzo</span></h1>
+              <h1 className='hero_primary'>Hi, I'm Lorenzo</h1>
             </Grid>
             <Grid item xs={1}>
               <span className='hero_secondary'>I develop all kinds of applications, some professionally, some for fun!</span>

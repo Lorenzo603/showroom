@@ -161,7 +161,7 @@ header {
 }
 
 h1.hero_primary {
-  font-size: 6rem;
+  font-size: 5em;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
   text-align: center;
@@ -176,20 +176,50 @@ h1.hero_primary {
 }
 
 .coloured-text {
+  text-transform: uppercase;
   animation: fade-colours 20s infinite;
 }
 
 @keyframes fade-colours {
-  0% {color: black;}
-  10% {color: blue;}
-  20% {color: limegreen;}
-  30% {color: orange;}
-  40% {color: red;}
-  60% {color: violet;}
-  70% {color: orange;}
-  80% {color: limegreen;}
-  90% {color: blue;}
-  100% {color: black;}
+  0% {
+    color: black;
+  }
+
+  10% {
+    color: blue;
+  }
+
+  20% {
+    color: limegreen;
+  }
+
+  30% {
+    color: orange;
+  }
+
+  40% {
+    color: red;
+  }
+
+  60% {
+    color: violet;
+  }
+
+  70% {
+    color: orange;
+  }
+
+  80% {
+    color: limegreen;
+  }
+
+  90% {
+    color: blue;
+  }
+
+  100% {
+    color: black;
+  }
 }
 
 .hero_secondary {
