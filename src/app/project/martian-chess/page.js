@@ -33,7 +33,7 @@ export default function ProjectPage({ params }) {
                             <Grid item xs={12}>
                                 <Grid container justifyContent="center" className={styles.project_section}>
                                     <ProjectImage
-                                        imageSrc="/img/projects/martian-chess/martian-chess-3d.png"
+                                        imageSrc="/img/projects/martian-chess/martian-chess-3d-big.png"
                                         imageAlt="Martian Chess 3D Version"
                                         imageSizes="100vw"
                                     />
