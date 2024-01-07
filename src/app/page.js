@@ -68,7 +68,7 @@ export default function Home() {
       {
         'title': 'Japanese Reviews',
         'slug': 'japanese-reviews',
-        'image': '/img/projects/japanese-reviews/japanese-reviews-intro.png',
+        'image': '/img/projects/japanese-reviews/japanese-reviews-intro.webp',
         'description': 'Learn the Japanese language by guessing meanings and readings of Kanjis. Vocabulary powered by the Wanikani dictionary.',
         'technologies': ['nextjs', 'mongodb', 'react'],
       },
@@ -82,7 +82,7 @@ export default function Home() {
       {
         'title': 'Martian Chess',
         'slug': 'martian-chess',
-        'image': '/img/projects/martian-chess/martian-chess-3d.png',
+        'image': '/img/projects/martian-chess/martian-chess-3d-title.webp',
         'description': 'Implementation of the Martian Chess board game from Looney Labs built with the Godot game engine',
         'technologies': ['godot'],
       },
@@ -96,7 +96,7 @@ export default function Home() {
       {
         'title': 'Showroom',
         'slug': 'showroom',
-        'image': '/img/projects/showroom/showroom-title.png',
+        'image': '/img/projects/showroom/showroom-title.webp',
         'description': 'This website. Created with the Next.js framework. Feel free to use this as template.',
         'technologies': ['nextjs', 'react'],
       },

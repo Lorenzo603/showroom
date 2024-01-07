@@ -152,7 +152,7 @@ header {
   background-color: #eee;
   background-image:
     /* linear-gradient(to top, rgba(203, 230, 254, 0.138) 0%, rgba(206, 243, 255, 0.272) 100%), */
-    url('/img/geometric_mosaic_tile_shape_background.jpg');
+    url('/img/geometric_mosaic_tile_shape_background.webp');
   height: 50vh;
   min-height: 30rem;
   max-height: 60rem;
