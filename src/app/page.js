@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard'
 import { Grid } from '@mui/material';
 import HomeIntro from '@/components/HomeIntro';
 import CertificationBadge from '@/components/CertificationBadge';
+import * as ReactDOM from 'react-dom';
 
 export default function Home() {
 
@@ -103,6 +104,9 @@ export default function Home() {
     ]
   }
 
+  ReactDOM.preload("/img/geometric_mosaic_tile_shape_background.webp",
+    { as: "image", type: "image/webp", fetchpriority: "high" })
+    
   return (
     <>
 
