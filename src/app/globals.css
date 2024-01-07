@@ -383,7 +383,8 @@ footer {
   color: darkgrey;
   text-align: center;
   align-self: center;
-  padding: 2em;
+  padding: 4em;
+  padding-left: 2em;
 }
 
 .footer a {
