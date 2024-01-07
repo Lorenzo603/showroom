@@ -75,8 +75,8 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 
-  /* for the Sticky footer*/
-  height: 100%;
+  /* for the Sticky footer (removed because it doesn't work on Firefox) */
+  /* height: 100%; */
 }
 
 body {
