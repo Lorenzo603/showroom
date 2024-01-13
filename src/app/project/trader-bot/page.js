@@ -42,6 +42,8 @@ export default function ProjectPage({ params }) {
                                 </Grid>
                             </Grid>
 
+                            <h2 className="visually-hidden">Features</h2>
+
                             <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={12} md={12} lg={4}>
 

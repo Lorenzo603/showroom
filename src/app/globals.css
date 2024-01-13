@@ -321,6 +321,10 @@ h3 {
   margin-right: 0.5em;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /* Tooltips */
 .tooltip {
   position: relative;
