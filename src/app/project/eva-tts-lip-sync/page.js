@@ -20,7 +20,7 @@ export default function ProjectPage({ params }) {
                     <Grid item xs={8}>
                         <Grid container direction="column">
 
-                            <h1 className={styles.project_h1}>EVA - Text-to-speech with Lip Sync</h1>
+                            <h1 className={styles.project_h1}>Text-to-speech with visemes</h1>
                             <Grid container justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={8}>
                                     <p>

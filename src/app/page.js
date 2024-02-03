@@ -74,7 +74,7 @@ export default function Home() {
         'technologies': ['nextjs', 'mongodb', 'react'],
       },
       {
-        'title': 'EVA TTS Lip Sync',
+        'title': 'Text-to-speech with visemes',
         'slug': 'eva-tts-lip-sync',
         'image': '/img/projects/eva-tts-lip-sync/python-eva.png',
         'description': 'Concept avatar with text-to-speech capabilities and lip syncing. Uses the Raylib library to draw the UI and handle animations',
@@ -95,7 +95,7 @@ export default function Home() {
         'technologies': ['python', 'hashicorp-vault', 'metamask'],
       },
       {
-        'title': 'Showroom',
+        'title': 'Portfolio template',
         'slug': 'showroom',
         'image': '/img/projects/showroom/showroom-title.webp',
         'description': 'This website. Created with the Next.js framework. Feel free to use this as template.',

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
@@ -58,6 +59,7 @@ export default function ProjectCard({ project }) {
                         image={project.image}
                         alt="Project image Alt"
                     />
+                    <CardHeader style={{textAlign: "left", paddingBottom: "0px"}} title = {project.title} />
                     <CardContent>
                         <Typography style={{ textAlign: "left", minHeight: "5em" }}>
                             {project.description}
