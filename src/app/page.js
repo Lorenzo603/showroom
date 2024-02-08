@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import HomeIntro from '@/components/HomeIntro';
 import CertificationBadge from '@/components/CertificationBadge';
 import * as ReactDOM from 'react-dom';
+import Link from "next/link";
 
 export default function Home() {
 
@@ -152,7 +153,7 @@ export default function Home() {
                           This a website where I collect and share some of the <strong>projects</strong> that I pursue outside of my professional life.
                         </p>
                         <p className="bio">
-                          I&#39;m always open to new opportunities where I can learn and grow. Feel free to <strong>contact</strong> me!
+                          I&#39;m always open to new opportunities where I can learn and grow. Feel free to <Link target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>contact</Link> me!
                         </p>
                       </Grid>
                     </Grid>
