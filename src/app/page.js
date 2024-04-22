@@ -1,7 +1,6 @@
 import styles from './page.module.css'
 import ProjectCard from '../components/ProjectCard'
 import { Grid } from '@mui/material';
-import HomeIntro from '@/components/HomeIntro';
 import CertificationBadge from '@/components/CertificationBadge';
 import * as ReactDOM from 'react-dom';
 import Link from "next/link";
@@ -75,6 +74,13 @@ export default function Home() {
         'technologies': ['nextjs', 'mongodb', 'react'],
       },
       {
+        'title': 'Unity Thumbnail Generator',
+        'slug': 'unity-thumbnail-generator',
+        'image': '/img/projects/unity-thumbnail-generator/unity-thumbnail-generator-intro.webp',
+        'description': 'Generate custom thumbnails for your Unity prefabs with possibility of controlling the lighting and camera position of the scene used for generating the thumbnail.',
+        'technologies': ['unity', 'c-sharp'],
+      },
+      {
         'title': 'Text-to-speech with visemes',
         'slug': 'eva-tts-lip-sync',
         'image': '/img/projects/eva-tts-lip-sync/python-eva.png',
@@ -107,7 +113,7 @@ export default function Home() {
 
   ReactDOM.preload("/img/geometric_mosaic_tile_shape_background.webp",
     { as: "image", type: "image/webp", fetchpriority: "high" })
-    
+
   return (
     <>
 

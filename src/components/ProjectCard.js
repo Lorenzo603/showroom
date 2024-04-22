@@ -46,6 +46,14 @@ export default function ProjectCard({ project }) {
         'logo': '/img/techs/raylib-logo.png',
         'tooltip': 'raylib',
     });
+    TECH_LOGOS_MAP.set('unity', {
+        'logo': '/img/techs/unity-logo.svg',
+        'tooltip': 'Unity',
+    });
+    TECH_LOGOS_MAP.set('c-sharp', {
+        'logo': '/img/techs/c-sharp-logo.svg',
+        'tooltip': 'C#',
+    });
 
 
 
@@ -59,7 +67,7 @@ export default function ProjectCard({ project }) {
                         image={project.image}
                         alt="Project image Alt"
                     />
-                    <CardHeader style={{textAlign: "left", paddingBottom: "0px"}} title = {project.title} />
+                    <CardHeader style={{ textAlign: "left", paddingBottom: "0px" }} title={project.title} />
                     <CardContent>
                         <Typography style={{ textAlign: "left", minHeight: "5em" }}>
                             {project.description}

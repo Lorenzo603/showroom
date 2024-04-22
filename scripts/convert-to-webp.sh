@@ -5,8 +5,8 @@ echo "Scripts Dir:" $SCRIPTS_DIR
 
 echo "Converting image to .webp format..."
 
-source_image=public/img/projects/japanese-reviews/japanese-reviews-intro-original-2.png
-target_image=public/img/projects/japanese-reviews/japanese-reviews-intro-original-2.webp
+source_image=public/img/projects/unity-thumbnail-generator/unity-thumbnail-generator-intro.png
+target_image=public/img/projects/unity-thumbnail-generator/unity-thumbnail-generator-intro.webp
 
 cwebp -q 80 $SCRIPTS_DIR/../$source_image -o $SCRIPTS_DIR/../$target_image
 
