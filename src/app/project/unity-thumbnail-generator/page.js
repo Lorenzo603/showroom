@@ -27,7 +27,7 @@ export default function ProjectPage({ params }) {
                                         Unity Thumbnail Generator is a powerful custom tool designed specifically for the Unity game engine.
                                         It allows developers to generate custom thumbnails for their prefabs.
                                         You can control lighting, camera positioning, and virtually everything else in the scene used for thumbnail generation.
-                                        For instance, you have the flexibility to adjust the thumbnail background color by simply tweaking the &quot;Environment-&gt;Background Type&quot; setting on the scene's Main Camera.
+                                        For instance, you have the flexibility to adjust the thumbnail background color by simply tweaking the &quot;Environment-&gt;Background Type&quot; setting on the scene&#39;s Main Camera.
                                     </p>
                                 </Grid>
                             </Grid>
@@ -44,7 +44,7 @@ export default function ProjectPage({ params }) {
                             <h2 className={styles.project_h2}>How it works</h2>
                             <p>
                                 The script traverses through a project folder recursively, searching for prefabs.
-                                Once located, it instantiates each prefab in a designated scene, capturing a snapshot of the scene's camera output on a texture.
+                                Once located, it instantiates each prefab in a designated scene, capturing a snapshot of the scene&#39;s camera output on a texture.
                                 This texture is then saved to the Thumbnails folder and used as a thumbnail for the corresponding prefab in the Project Window.
                                 An editor extension ensures that thumbnails and prefabs are seamlessly matched by looking for thumbnails in the Thumbnails folder,
                                 following the same tree structure as the Asset folder.
