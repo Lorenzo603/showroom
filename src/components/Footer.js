@@ -30,6 +30,14 @@ const Footer = () => {
                 alt="Lorenzo GitHub Profile"
               />
             </Link>
+            <Link target="_blank" href={process.env.NEXT_PUBLIC_ITCHIO_URL}>
+              <Image
+                src="/img/social/itchio-logo.svg"
+                width={60}
+                height={60}
+                alt="Lorenzo itch.io Profile"
+              />
+            </Link>
           </div>
         </div>
       </div>

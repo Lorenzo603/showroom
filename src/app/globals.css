@@ -278,6 +278,19 @@ h3 {
   text-decoration: underline;
 }
 
+.bio-itch {
+  font-size: 1.2em;
+  color: #666;
+  /* max-width: 60rem; */
+  line-height: 1.7;
+  text-align: start;
+}
+
+.bio-itch a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
 /* Skills */
 .skill {
   background-color: lightgray;

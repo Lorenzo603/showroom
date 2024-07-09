@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import CertificationBadge from '@/components/CertificationBadge';
 import * as ReactDOM from 'react-dom';
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -207,7 +208,27 @@ export default function Home() {
         </section>
       </Grid >
 
-
+      <Grid item xs={12}>
+        <section id="gamedev">
+          <Grid container justifyContent="center" alignContent="center" className='about_content'>
+            <Grid item xs={2} justifyContent="end" alignContent="center">
+              <Link target="_blank" href={process.env.NEXT_PUBLIC_ITCHIO_URL}>
+                <Image
+                  src="/img/social/itchio-badge-color.svg"
+                  width={200}
+                  height={140}
+                  alt="Available on itch.io"
+                />
+              </Link>
+            </Grid>
+            <Grid item xs={4} justifyContent="start" alignContent="center">
+              <p className="bio-itch">
+                You can also find some games I developed on my <Link target="_blank" href={process.env.NEXT_PUBLIC_ITCHIO_URL}>itch.io</Link> page!
+              </p>
+            </Grid>
+          </Grid>
+        </section>
+      </Grid>
 
       <Grid item xs={12}>
         <section id="projects">
