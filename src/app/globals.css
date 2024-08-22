@@ -283,7 +283,8 @@ h3 {
   color: #666;
   /* max-width: 60rem; */
   line-height: 1.7;
-  text-align: start;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .bio-itch a {
