@@ -39,6 +39,9 @@ export default function Home() {
         "name": "React",
       },
       {
+        "name": "Tailwind CSS",
+      },
+      {
         "name": "Git",
       },
     ]
