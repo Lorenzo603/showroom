@@ -160,15 +160,6 @@ a {
   line-height: 2.2;
 }
 
-.bio-itch {
-  /* font-size: 1.2em; */
-  color: #666;
-  /* max-width: 60rem; */
-  line-height: 1.7;
-  /* text-align: center; */
-  padding-bottom: 1em;
-}
-
 /* Skills */
 .skill {
   background-color: lightgray;

@@ -193,7 +193,14 @@ export default function Home() {
 
 
       <section id="gamedev">
-        <Grid item xs={12} justifyContent="center" alignContent="center" className='about_content'>
+        <div className='bg-zinc-200 flex flex-col items-center justify-center py-8'>
+          <h2 className='text-3xl text-slate-900 font-bold'>Gamedev</h2>
+
+          <div className='px-8'>
+            <p className="text-lg leading-relaxed text-slate-700 py-4">
+              You can also find some games I developed on my <Link target="_blank" className='underline text-blue-800' href={process.env.NEXT_PUBLIC_ITCHIO_URL}>itch.io</Link> page!
+            </p>
+          </div>
           <Link target="_blank" href={process.env.NEXT_PUBLIC_ITCHIO_URL}>
             <Image
               src="/img/social/itchio-badge-color.svg"
@@ -202,13 +209,7 @@ export default function Home() {
               alt="Available on itch.io"
             />
           </Link>
-
-          <Grid item xs={12} justifyContent="center" alignContent="center">
-            <p className="bio-itch">
-              You can also find some games I developed on my <Link target="_blank" href={process.env.NEXT_PUBLIC_ITCHIO_URL}>itch.io</Link> page!
-            </p>
-          </Grid>
-        </Grid>
+        </div>
       </section >
 
       <Grid item xs={12}>
