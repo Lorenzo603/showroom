@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,13 +6,12 @@ const Footer = () => {
   return (
 
     <footer>
-      <div style={{ width: "66%" }}>
-        <div className="footer">
+        <div className="flex flex-col justify-center items-center">
 
-          <div className="footer-copyright">
+          <div className="text-gray-400 p-6">
             &#169; Copyright {new Date().getFullYear()} {process.env.NEXT_PUBLIC_PERSONAL_NAME}
           </div>
-          <div className="footer-right">
+          <div className="flex flex-row flex-wrap justify-center items-center gap-10 pb-10">
             <Link target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>
               <Image
                 src="/img/social/linkedin-logo.png"
@@ -39,7 +37,6 @@ const Footer = () => {
               />
             </Link>
           </div>
-        </div>
       </div>
     </footer>
 

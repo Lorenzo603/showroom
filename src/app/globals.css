@@ -152,14 +152,6 @@ a {
   }
 }
 
-/* About */
-.about_title {
-  color: #333;
-  font-size: 2.2rem;
-  text-align: center;
-  line-height: 2.2;
-}
-
 /* Skills */
 .skill {
   background-color: lightgray;
@@ -169,7 +161,6 @@ a {
   padding: 1em;
   border-radius: 0.5em;
   font-weight: 500;
-  /* line-height: 1em; */
 }
 
 /* Certifications */
@@ -267,52 +258,10 @@ a {
   border-color: black transparent transparent transparent;
 }
 
-/* Footer */
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.footer {
-  overflow: hidden;
-  background-color: black;
-  justify-content: space-between;
-  display: flex;
-}
-
-.footer-copyright {
-  color: darkgrey;
-  text-align: center;
-  align-self: center;
-  padding: 4em;
-  padding-left: 2em;
-}
-
-.footer a {
-  padding: 1em;
-}
-
-.footer-right {
-  align-self: center;
-}
-
-
 /* Sticky Footer*/
 .wrapper {
   box-sizing: border-box;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.page-footer {
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-.page-body {
-  color: #333;
-  background-color: #eee;
-  flex-grow: 1;
 }
