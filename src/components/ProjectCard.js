@@ -62,7 +62,7 @@ export default function ProjectCard({ project }) {
 
 
     return (
-        <div>
+        <div className='max-w-96'>
             <Link href={`/project/${project.slug}`}>
                 <div className="bg-white text-slate-900 border rounded-lg shadow-lg 
                     transition-shadow duration-500 hover:shadow-projectCard

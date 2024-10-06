@@ -73,14 +73,14 @@ export default function Home() {
         'title': 'Feverail',
         'slug': 'feverail',
         'image': '/img/projects/feverail/feverail-intro.webp',
-        'description': 'Shoot your way through waves of enemies in this Tempest-inspired shmup.',
+        'description': 'Shoot your way through waves of enemies in this Tempest-inspired shmup. Uses the Godot game engine. All 3D models built with Blender.',
         'technologies': ['godot', 'blender'],
       },
       {
         'title': 'Japanese Reviews',
         'slug': 'japanese-reviews',
         'image': '/img/projects/japanese-reviews/japanese-reviews-intro.webp',
-        'description': 'Learn the Japanese language by guessing meanings and readings of Kanjis. Vocabulary powered by the Wanikani dictionary.',
+        'description': 'Learn the Japanese language by guessing meanings and readings of Kanjis. It leverages the Wanikani APIs and dataset. Built-in Space Repetition System.',
         'technologies': ['nextjs', 'mongodb', 'react'],
       },
       {
@@ -94,14 +94,14 @@ export default function Home() {
         'title': 'Text-to-speech with visemes',
         'slug': 'eva-tts-lip-sync',
         'image': '/img/projects/eva-tts-lip-sync/python-eva.png',
-        'description': 'Concept avatar with text-to-speech capabilities and lip syncing. Uses the Raylib library to draw the UI and handle animations',
+        'description': 'Concept avatar with text-to-speech capabilities and rudimental lip syncing. Recognizes a collection of phonemes and visemes to draw the mouth.',
         'technologies': ['python', 'raylib'],
       },
       {
         'title': 'Martian Chess',
         'slug': 'martian-chess',
         'image': '/img/projects/martian-chess/martian-chess-3d-title.webp',
-        'description': 'Implementation of the Martian Chess board game from Looney Labs built with the Godot game engine',
+        'description': 'Implementation of the amazing Martian Chess board game from Looney Labs built with the Godot game engine. Play solo against the AI or against another player.',
         'technologies': ['godot'],
       },
       {
@@ -143,7 +143,7 @@ export default function Home() {
           bg-[#eee] text-slate-900 
           items-center justify-center 
           p-8 ">
-          <h2 className='text-3xl font-bold'>About Me</h2>
+          <h2 className='text-3xl font-bold pb-4'>About Me</h2>
           <div className='flex flex-col lg:flex-row lg:px-12 lg:gap-x-12'>
             <div className='flex flex-col'>
               <h3 className='text-xl font-bold py-2'>Short Bio</h3>
@@ -213,8 +213,8 @@ export default function Home() {
 
       <section id="projects">
         <div className='flex flex-col items-center justify-center bg-slate-50 p-6'>
-          <h2 className='text-3xl text-slate-900 font-bold py-2'>My personal projects</h2>
-          <div className='flex flex-row flex-wrap gap-6 p-2'>
+          <h2 className='text-3xl text-slate-900 font-bold pt-2 pb-4'>My personal projects</h2>
+          <div className='flex flex-row flex-wrap gap-6 p-2 justify-center'>
             {getProjects().map(
               (project) => (
                 <ProjectCard key={project.title} project={project} />
