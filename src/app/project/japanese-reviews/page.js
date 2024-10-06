@@ -26,32 +26,46 @@ export default function ProjectPage({ params }) {
                     <section>
                         <h2 className="sr-only">Features</h2>
 
-                        <h3 className="text-xl font-bold py-4">Multiple review modes</h3>
-                        <p className="text-xl">Start from kanji prompt and input reading or meaning, or start from English prompt and input the Kanji reading.</p>
 
-                        <h3 className="text-xl font-bold py-4">Visually similar kanjis</h3>
-                        <p className="text-xl">Practice only the Kanjis that are visually similar to each other.</p>
+                        <div className="flex flex-row flex-wrap gap-10 justify-center py-4">
+                            <div className="max-w-md">
+                                <h3 className="text-xl font-bold py-4">Multiple review modes</h3>
+                                <p className="text-xl">Start from kanji prompt and input reading or meaning, or start from English prompt and input the Kanji reading.</p>
 
-                        <ProjectImage
-                            imageSrc="/img/projects/japanese-reviews/project-japanese-reviews-next.png"
-                            imageAlt="Main Screen of the Japanese Reviews app"
-                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
-                        />
+                                <h3 className="text-xl font-bold py-4">Visually similar kanjis</h3>
+                                <p className="text-xl">Practice only the Kanjis that are visually similar to each other.</p>
+                            </div>
 
-                        <ProjectImage
-                            imageSrc="/img/projects/japanese-reviews/correct-answer.png"
-                            imageAlt="Image of a correct answer example"
-                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
-                        />
+                            <div className="max-w-lg">
+                                <ProjectImage
+                                    imageSrc="/img/projects/japanese-reviews/project-japanese-reviews-next.webp"
+                                    imageAlt="Main Screen of the Japanese Reviews app"
+                                    imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                />
+                            </div>
+                        </div>
 
-                        <h3 className="text-xl font-bold py-4">Focus mode</h3>
-                        <p className="text-xl">Hide statistics about the current session for total immersion and focus.</p>
+                        <div className="flex flex-row flex-wrap gap-10 justify-center py-4">
 
-                        <h3 className="text-xl font-bold py-4">Practice Mode</h3>
-                        <p className="text-xl">Disable adding wrong answers to the SRS system for a stress free practice.</p>
+                            <div className="max-w-sm">
+                                <ProjectImage
+                                    imageSrc="/img/projects/japanese-reviews/correct-answer.webp"
+                                    imageAlt="Image of a correct answer example"
+                                    imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                />
+                            </div>
 
-                        <h3 className="text-xl font-bold py-4">Preconfigured Sets</h3>
-                        <p className="text-xl">Find precompiled review sets with kanji lists from JLPT N5 through N2.</p>
+                            <div className="max-w-md">
+                                <h3 className="text-xl font-bold py-4">Focus mode</h3>
+                                <p className="text-xl">Hide statistics about the current session for total immersion and focus.</p>
+
+                                <h3 className="text-xl font-bold py-4">Practice Mode</h3>
+                                <p className="text-xl">Disable adding wrong answers to the SRS system for a stress free practice.</p>
+
+                                <h3 className="text-xl font-bold py-4">Preconfigured Sets</h3>
+                                <p className="text-xl">Find precompiled review sets with kanji lists from JLPT N5 through N2.</p>
+                            </div>
+                        </div>
                     </section>
                 </div>
 
@@ -91,7 +105,7 @@ export default function ProjectPage({ params }) {
                                     alt="Japanese Reviews GitHub link"
                                 />
                             </Link>
-                            <Link target="_blank"className="underline text-blue-800" href="https://github.com/Lorenzo603/japanese-reviews-next">
+                            <Link target="_blank" className="underline text-blue-800" href="https://github.com/Lorenzo603/japanese-reviews-next">
                                 https://github.com/Lorenzo603/japanese-reviews-next
                             </Link>
                         </div>
