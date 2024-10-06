@@ -204,7 +204,7 @@ export default function Home() {
             <Image
               src="/img/social/itchio-badge-color.svg"
               width={200}
-              height={140}
+              height={60}
               alt="Available on itch.io"
             />
           </Link>
