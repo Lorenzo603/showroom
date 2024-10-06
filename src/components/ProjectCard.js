@@ -62,62 +62,51 @@ export default function ProjectCard({ project }) {
 
 
     return (
-        <StyledEngineProvider injectFirst>
+        <div>
             <Link href={`/project/${project.slug}`}>
-                <Card className='project_card'>
-                    <CardMedia
-                        component="img"
-                        height="194"
-                        image={project.image}
+                <div className="bg-white text-slate-900 border rounded-lg shadow-lg 
+                    transition-shadow duration-500 hover:shadow-projectCard
+                    overflow-visible z-auto" // Needed to avoid tooltip being cutoff by the Card
+                >
+                    <img
+                        src={project.image}
                         alt=""
+                        className="w-full h-48 object-cover rounded-t-lg"
                     />
-                    <CardHeader style={{ textAlign: "left", paddingBottom: "0px" }} title={project.title} />
-                    <CardContent>
-                        <Typography style={{ textAlign: "left", minHeight: "5em" }}>
+                    <div className="p-4">
+                        <h2 className="text-left text-2xl font-bold mb-2">{project.title}</h2>
+                        <p className="text-left text-gray-700 min-h-[5em]">
                             {project.description}
-                        </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Grid item xs={12}>
-                            <Grid container justifyContent="space-between">
-                                <Grid item xs={6}>
-                                    <Grid container justifyContent="flex-start">
-                                        {
-                                            project.technologies.map(
-                                                tech => {
-                                                    const technologyEntry = TECH_LOGOS_MAP.get(tech)
-                                                    return (
-                                                        <div key={tech} className="tooltip">
-                                                            <span className="tooltiptext">{technologyEntry.tooltip}</span>
-                                                            <Image
-                                                                src={technologyEntry.logo}
-                                                                width={40}
-                                                                height={40}
-                                                                alt={technologyEntry.tooltip}
-                                                                className="technology-logo"
-                                                            />
-                                                        </div>
-                                                    )
-                                                }
-                                            )
-                                        }
-                                    </Grid>
-                                </Grid>
-                                <Grid item xs={1}>
-                                    <Image
-                                        src="/img/chevron-right.svg"
-                                        width={40}
-                                        height={40}
-                                        alt="Go to project page"
-                                        className="certification-zoom"
-                                    />
-                                </Grid>
-                            </Grid>
-                        </Grid>
-                    </CardActions>
-
-                </Card>
+                        </p>
+                    </div>
+                    <div className="flex justify-between items-center p-4">
+                        <div className="flex space-x-2">
+                            {project.technologies.map((tech) => {
+                                const technologyEntry = TECH_LOGOS_MAP.get(tech);
+                                return (
+                                    <div key={tech} className="tooltip">
+                                        <span className="tooltiptext">{technologyEntry.tooltip}</span>
+                                        <Image
+                                            src={technologyEntry.logo}
+                                            width={40}
+                                            height={40}
+                                            alt=""
+                                        />
+                                    </div>
+                                );
+                            })}
+                        </div>
+                        <Image
+                            src="/img/chevron-right.svg"
+                            width={40}
+                            height={40}
+                            alt="Go to project page"
+                            className="transition-transform transform hover:scale-125"
+                        />
+                    </div>
+                </div>
             </Link>
-        </StyledEngineProvider>
+        </div>
+
     );
 }

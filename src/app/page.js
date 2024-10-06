@@ -1,6 +1,5 @@
 import styles from './page.module.css'
 import ProjectCard from '../components/ProjectCard'
-import { Grid } from '@mui/material';
 import CertificationBadge from '@/components/CertificationBadge';
 import * as ReactDOM from 'react-dom';
 import Link from "next/link";
@@ -212,28 +211,19 @@ export default function Home() {
         </div>
       </section >
 
-      <Grid item xs={12}>
-        <section id="projects">
-          <Grid container justifyContent="center" className="project_content">
-            <Grid item xs={12}>
-              <h2>My personal projects</h2>
-            </Grid>
-            <Grid item xs={10} style={{ marginBottom: "5em" }}>
-              <Grid container spacing={4}>
-                {getProjects().map(
-                  (project) => (
-                    <Grid key={project.title} item xs={12} md={6} lg={4}>
-                      <ProjectCard project={project} />
-                    </Grid>
-                  )
-                )}
+      <section id="projects">
+        <div className='flex flex-col items-center justify-center bg-slate-50 p-6'>
+          <h2 className='text-3xl text-slate-900 font-bold py-2'>My personal projects</h2>
+          <div className='flex flex-row flex-wrap gap-6 p-2'>
+            {getProjects().map(
+              (project) => (
+                <ProjectCard key={project.title} project={project} />
+              )
+            )}
+          </div>
+        </div>
+      </section>
 
-              </Grid>
-            </Grid>
-          </Grid>
-        </section>
-      </Grid>
-
-    </main>
+    </main >
   )
 }

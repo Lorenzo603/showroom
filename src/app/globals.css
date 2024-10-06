@@ -173,31 +173,6 @@ a {
 }
 
 /* Projects */
-.project_content {
-  color: #333;
-  background-color: #fafafa;
-  text-align: center;
-}
-
-.project_card {
-  background-color: white;
-  color: #333;
-  padding: 0.5em;
-  cursor: pointer;
-  transition: box-shadow 0.5s;
-
-  /* Needed to avoid tooltip being cutoff by the Card */
-  overflow: visible;
-  z-index: auto;
-}
-
-.project_card:hover {
-  box-shadow: 0 0 20px #515151;
-}
-
-.technology-logo {
-  margin-right: 0.5em;
-}
 
 .visually-hidden {
   position: absolute !important;
