@@ -10,7 +10,7 @@ const ProjectImage = ({ imageSrc, imageAlt, imageSizes }) => {
                 alt={imageAlt}
                 sizes={imageSizes}
                 style={{position: ""}}
-                class="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl"
             />
             
         </div>

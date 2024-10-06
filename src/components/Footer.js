@@ -17,6 +17,7 @@ const Footer = () => {
                 src="/img/social/linkedin-logo.png"
                 width={60}
                 height={60}
+                style={{ width: "60px", height: "60px" }}
                 alt="Lorenzo LinkedIn Profile"
               />
             </Link>
@@ -25,6 +26,7 @@ const Footer = () => {
                 src="/img/social/github-logo.png"
                 width={60}
                 height={60}
+                style={{ width: "60px", height: "60px" }}
                 alt="Lorenzo GitHub Profile"
               />
             </Link>
@@ -33,6 +35,7 @@ const Footer = () => {
                 src="/img/social/itchio-logo.svg"
                 width={60}
                 height={60}
+                style={{ width: "60px", height: "60px" }}
                 alt="Lorenzo itch.io Profile"
               />
             </Link>

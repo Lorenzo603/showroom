@@ -2,6 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import ProjectImage from "@/components/ProjectImage";
 
+export const metadata = {
+    title: 'Japanese Reviews Project',
+    description: 'Japanese Reviews Space Repetition System SRS Application',
+}
+
 export default function ProjectPage({ params }) {
 
     function getTechnologies() {
@@ -102,6 +107,7 @@ export default function ProjectPage({ params }) {
                                     src="/img/social/github-logo-black.png"
                                     width={40}
                                     height={40}
+                                    style={{ width: "40px", height: "40px" }}
                                     alt="Japanese Reviews GitHub link"
                                 />
                             </Link>
