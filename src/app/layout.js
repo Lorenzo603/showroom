@@ -4,7 +4,6 @@ import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
-import { Grid } from '@mui/material'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -27,9 +26,7 @@ export default function RootLayout({ children }) {
         <div className="wrapper">
           <Header />
 
-          <Grid item xs={12} className="page-body">
-            {children}
-          </Grid >
+          {children}
 
           <Footer />
         </div>

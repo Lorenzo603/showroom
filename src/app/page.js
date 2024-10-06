@@ -126,21 +126,17 @@ export default function Home() {
     { as: "image", type: "image/webp", fetchpriority: "high" })
 
   return (
-    <>
+    <main>
 
-      <Grid item xs={12}>
-        <section id="home">
-          <Grid container direction="column" justifyContent="center" className='hero_content'>
-            <Grid item xs={1}>
-              <h1 className="hero_primary">Hi, I&#39;m Lorenzo</h1>
-            </Grid>
-            <Grid item xs={1}>
-              <span className="hero_secondary">I develop all kinds of applications, some professionally, some for fun!</span>
-            </Grid>
-          </Grid>
-        </section>
-      </Grid>
-
+      <section id="home">
+        <div className="bg-center bg-slate-50 bg-[url('/img/geometric_mosaic_tile_shape_background.webp')] 
+          h-96 sm:h-[30rem] flex items-center justify-center">
+          <div className='flex flex-col text-center text-slate-900'>
+            <h1 className="text-5xl sm:text-7xl font-bold p-8">Hi, I&#39;m Lorenzo</h1>
+            <p className="text-2xl sm:text-4xl px-8 pb-8">I develop all kinds of applications, some professionally, some for fun!</p>
+          </div>
+        </div>
+      </section>
 
 
       <Grid item xs={12}>
@@ -260,6 +256,6 @@ export default function Home() {
         </section>
       </Grid>
 
-    </>
+    </main>
   )
 }

@@ -105,35 +105,6 @@ a {
 
 /* Hero Content */
 
-.hero_content {
-  color: #333;
-  background-position: center;
-  background-color: #eee;
-  background-image:
-    /* linear-gradient(to top, rgba(203, 230, 254, 0.138) 0%, rgba(206, 243, 255, 0.272) 100%), */
-    url('/img/geometric_mosaic_tile_shape_background.webp');
-  height: 50vh;
-  min-height: 30rem;
-  max-height: 60rem;
-  /* position: relative; */
-  text-align: center;
-}
-
-h1.hero_primary {
-  font-size: 5em;
-  /* text-transform: uppercase; */
-  letter-spacing: 1px;
-  text-align: center;
-  color: #111;
-  font-weight: 800;
-}
-
-@media only screen and (max-width: 37.5em) {
-  h1.hero_primary {
-    font-size: 4rem
-  }
-}
-
 .coloured-text {
   text-transform: uppercase;
   animation: fade-colours 20s infinite;
@@ -178,22 +149,6 @@ h1.hero_primary {
 
   100% {
     color: black;
-  }
-}
-
-.hero_secondary {
-  /* margin: 3rem auto 0 auto; */
-  max-width: 80rem;
-  color: #333;
-  font-size: 2.2rem;
-  text-align: center;
-  width: 100%;
-  line-height: 1.6;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .hero_secondary {
-    font-size: 1.7rem;
   }
 }
 
