@@ -33,47 +33,30 @@ export default function ProjectPage({ params }) {
                             <Grid container justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={8}>
                                     <p>
-                                        Shmup inspired by the classic game Tempest.
+                                        Shmup inspired by the classic game Tempest. Battle through waves of many different enemy types.
                                     </p>
-                                </Grid>
-                            </Grid>
-
-
-                            <Grid container justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={8}>
-                                    <h2 className={styles.project_h2}>Battlethrough waves of enemies</h2>
-                                    <p>
-                                        Many different enemy types
-                                    </p>
-                                </Grid>
-                            </Grid>
-
-                            <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={12} md={12} lg={4}>
-                                    <h3>Godot Game Engine</h3>
                                     <p>Implemented with the <Link target="_blank" href="https://godotengine.org/">Godot Game Engine</Link>.</p>
-
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={4}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/feverail/feverail-gameplay-2.webp"
-                                            imageAlt=""
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
-                                        />
-                                    </Grid>
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={4}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/feverail/feverail-intro.webp"
-                                            imageAlt=""
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
-                                        />
-                                    </Grid>
                                 </Grid>
                             </Grid>
 
+                            <Grid item xs={12} md={12} lg={4}>
+                                <Grid container justifyContent="center">
+                                    <ProjectImage
+                                        imageSrc="/img/projects/feverail/feverail-gameplay-2.webp"
+                                        imageAlt=""
+                                        imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
+                                    />
+                                </Grid>
+                            </Grid>
+                            <Grid item xs={12} md={12} lg={4}>
+                                <Grid container justifyContent="center">
+                                    <ProjectImage
+                                        imageSrc="/img/projects/feverail/feverail-intro.webp"
+                                        imageAlt=""
+                                        imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
+                                    />
+                                </Grid>
+                            </Grid>
 
 
                             <h2 className={styles.project_h2}>How to play</h2>
