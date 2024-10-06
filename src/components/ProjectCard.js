@@ -63,49 +63,51 @@ export default function ProjectCard({ project }) {
 
     return (
         <div className='max-w-96'>
-            <Link href={`/project/${project.slug}`}>
-                <div className="bg-white text-slate-900 border rounded-lg shadow-lg 
+            <article>
+                <Link href={`/project/${project.slug}`}>
+                    <div className="bg-white text-slate-900 border rounded-lg shadow-lg 
                     transition-shadow duration-500 hover:shadow-projectCard
                     overflow-visible z-auto" // Needed to avoid tooltip being cutoff by the Card
-                >
-                    <img
-                        src={project.image}
-                        alt=""
-                        className="w-full h-48 object-cover rounded-t-lg"
-                    />
-                    <div className="p-4">
-                        <h2 className="text-left text-2xl font-bold mb-2">{project.title}</h2>
-                        <p className="text-left text-gray-700 min-h-[5em]">
-                            {project.description}
-                        </p>
-                    </div>
-                    <div className="flex justify-between items-center p-4">
-                        <div className="flex space-x-2">
-                            {project.technologies.map((tech) => {
-                                const technologyEntry = TECH_LOGOS_MAP.get(tech);
-                                return (
-                                    <div key={tech} className="tooltip">
-                                        <span className="tooltiptext">{technologyEntry.tooltip}</span>
-                                        <Image
-                                            src={technologyEntry.logo}
-                                            width={40}
-                                            height={40}
-                                            alt=""
-                                        />
-                                    </div>
-                                );
-                            })}
-                        </div>
-                        <Image
-                            src="/img/chevron-right.svg"
-                            width={40}
-                            height={40}
-                            alt="Go to project page"
-                            className="transition-transform transform hover:scale-125"
+                    >
+                        <img
+                            src={project.image}
+                            alt=""
+                            className="w-full h-48 object-cover rounded-t-lg"
                         />
+                        <div className="p-4">
+                            <h3 className="text-left text-2xl font-bold mb-2">{project.title}</h3>
+                            <p className="text-left text-gray-700 min-h-[5em]">
+                                {project.description}
+                            </p>
+                        </div>
+                        <div className="flex justify-between items-center p-4">
+                            <div className="flex space-x-2">
+                                {project.technologies.map((tech) => {
+                                    const technologyEntry = TECH_LOGOS_MAP.get(tech);
+                                    return (
+                                        <div key={tech} className="tooltip">
+                                            <span className="tooltiptext">{technologyEntry.tooltip}</span>
+                                            <Image
+                                                src={technologyEntry.logo}
+                                                width={40}
+                                                height={40}
+                                                alt=""
+                                            />
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                            <Image
+                                src="/img/chevron-right.svg"
+                                width={40}
+                                height={40}
+                                alt="Go to project page"
+                                className="transition-transform transform hover:scale-125"
+                            />
+                        </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
+            </article>
         </div>
 
     );
