@@ -1,24 +1,27 @@
-import { Grid } from "@mui/material";
 import Link from "next/link";
+import HeaderNavLink from "./HeaderNavLink";
 
 const Header = () => {
 
   return (
-    <Grid item xs={12} className="page-header">
+    <div>
       <header>
-        <div style={{ width: "75%" }}>
-          <div className="header">
+        <div className="header">
+          <span className="hidden sm:inline
+              float-left text-slate-50 text-center text-lg font-bold uppercase p-6 hover:text-slate-900 hover:bg-slate-50">
             <Link href="/">{process.env.NEXT_PUBLIC_PERSONAL_NAME}</Link>
-            <div className="header-right">
-              <Link href="/#home">Home</Link>
-              <Link href="/#about">About</Link>
-              <Link href="/#projects">Projects</Link>
+          </span>
+          <nav>
+            <div className="sm:float-right flex flex-col sm:flex-row text-left px-6">
+              <HeaderNavLink href="/#home">Home</HeaderNavLink>
+              <HeaderNavLink href="/#about">About</HeaderNavLink>
+              <HeaderNavLink href="/#projects">Projects</HeaderNavLink>
             </div>
-          </div>
+          </nav>
         </div>
       </header>
 
-    </Grid>
+    </div>
   );
 };
 

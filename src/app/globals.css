@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -98,51 +102,6 @@ a {
 }
 
 /* Customs */
-
-/* Header */
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
-.header {
-  overflow: hidden;
-  background-color: black;
-}
-
-.header a {
-  float: left;
-  color: #eee;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 800;
-  line-height: 1em;
-  text-transform: uppercase;
-  padding: 2em;
-}
-
-.header a:hover {
-  cursor: pointer;
-  background-color: #eee;
-  color: black;
-}
-
-.header-right {
-  float: right;
-}
-
-@media screen and (max-width: 800px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .header-right {
-    float: none;
-  }
-}
 
 /* Hero Content */
 
@@ -438,7 +397,6 @@ footer {
   flex-direction: column;
 }
 
-.page-header,
 .page-footer {
   flex-grow: 0;
   flex-shrink: 0;
