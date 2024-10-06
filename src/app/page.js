@@ -50,19 +50,19 @@ export default function Home() {
     return [
       {
         "name": "AWS Security Specialty Certification",
-        "badge": "/img/certifications/aws-security-specialty-badge.png",
+        "badge": "/img/certifications/aws-security-specialty-badge.webp",
       },
       {
         "name": "AWS Solution Architect Associate Certification",
-        "badge": "/img/certifications/aws-solution-architect-associate-badge.png",
+        "badge": "/img/certifications/aws-solution-architect-associate-badge.webp",
       },
       {
         "name": "AWS Developer Associate Certification",
-        "badge": "/img/certifications/aws-developer-associate-badge.png",
+        "badge": "/img/certifications/aws-developer-associate-badge.webp",
       },
       {
         "name": "AWS Cloud Practitioner Certification",
-        "badge": "/img/certifications/aws-cloud-practitioner-badge.png",
+        "badge": "/img/certifications/aws-cloud-practitioner-badge.webp",
       },
     ]
   }
