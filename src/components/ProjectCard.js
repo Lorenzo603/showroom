@@ -34,6 +34,10 @@ export default function ProjectCard({ project }) {
         'logo': '/img/techs/godot-logo.svg',
         'tooltip': 'Godot',
     });
+    TECH_LOGOS_MAP.set('blender', {
+        'logo': '/img/techs/blender-logo.png',
+        'tooltip': 'Blender',
+    });
     TECH_LOGOS_MAP.set('hashicorp-vault', {
         'logo': '/img/techs/hashicorp-vault-logo.svg',
         'tooltip': 'HashiCorp Vault',
@@ -65,7 +69,7 @@ export default function ProjectCard({ project }) {
                         component="img"
                         height="194"
                         image={project.image}
-                        alt="Project image Alt"
+                        alt=""
                     />
                     <CardHeader style={{ textAlign: "left", paddingBottom: "0px" }} title={project.title} />
                     <CardContent>
@@ -104,7 +108,7 @@ export default function ProjectCard({ project }) {
                                         src="/img/chevron-right.svg"
                                         width={40}
                                         height={40}
-                                        alt="Go to project"
+                                        alt="Go to project page"
                                         className="certification-zoom"
                                     />
                                 </Grid>

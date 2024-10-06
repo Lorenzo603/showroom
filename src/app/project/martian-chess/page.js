@@ -24,7 +24,7 @@ export default function ProjectPage({ params }) {
                             <Grid container justifyContent="center" className={styles.project_section}>
                                 <Grid item xs={8}>
                                     <p>
-                                        Implementation of the fantastic Martian CHess game from <Link target="_blank" href="https://store.looneylabs.com/">Looney Labs</Link>!
+                                        Implementation of the fantastic Martian Chess game from <Link target="_blank" href="https://store.looneylabs.com/">Looney Labs</Link>!
                                         Play against another human or against 3 AI variations.
                                     </p>
                                 </Grid>

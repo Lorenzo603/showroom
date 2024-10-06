@@ -71,6 +71,13 @@ export default function Home() {
   function getProjects() {
     return [
       {
+        'title': 'Feverail',
+        'slug': 'feverail',
+        'image': '/img/projects/feverail/feverail-intro.webp',
+        'description': 'Shoot your way through waves of enemies in this Tempest-inspired shmup.',
+        'technologies': ['godot', 'blender'],
+      },
+      {
         'title': 'Japanese Reviews',
         'slug': 'japanese-reviews',
         'image': '/img/projects/japanese-reviews/japanese-reviews-intro.webp',
