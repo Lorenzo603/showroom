@@ -139,80 +139,57 @@ export default function Home() {
       </section>
 
 
-      <Grid item xs={12}>
-        <section id="about">
-          <Grid container justifyContent="center" className='about_content'>
-            <Grid item xs={12}>
-              <h2>About Me</h2>
-            </Grid>
-            <Grid item xs={10} md={8}>
-              <Grid container justifyContent="space-between" style={{ marginBottom: "2em" }}>
-                <Grid item xs={12} md={5}>
-                  <Grid container direction="column">
-                    <Grid item xs={12}>
-                      <Grid container justifyContent="flex-start">
-                        <h3>Short Bio</h3>
-                      </Grid>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Grid container justifyContent="flex-start">
-                        <p className="bio">
-                          I&#39;m a Software Developer with interests in all technologies spanning from scalable <strong>Cloud Architectures</strong> to Videogames.
-                        </p>
-                        <p className="bio">
-                          In my professional life I work mostly in the Ecommerce field where I&#39;ve built and designed many <strong>Enterprise Solutions</strong> over the years.
-                        </p>
-                        <p className="bio">
-                          This a website where I collect and share some of the <strong>projects</strong> that I pursue outside of my professional life.
-                        </p>
-                        <p className="bio">
-                          I&#39;m always open to new opportunities where I can learn and grow. Feel free to <Link target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>contact</Link> me!
-                        </p>
-                      </Grid>
-                    </Grid>
-                  </Grid>
-                </Grid>
-
-                <Grid item xs={12} md={6}>
-                  <Grid container direction="column">
-                    <Grid item xs={12}>
-                      <Grid container justifyContent="flex-start">
-                        <h3>Main Skills</h3>
-                      </Grid>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Grid container justifyContent="flex-start">
-                        {getSkills().map(skill => {
-                          return (
-                            <span key={skill.name} className="skill">{skill.name}</span>
-                          );
-                        })}
-                      </Grid>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Grid container justifyContent="flex-start">
-                        <h3>Certifications</h3>
-                      </Grid>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Grid container justifyContent="flex-start">
-                        {
-                          getCertificationBadges().map(
-                            (certification) => (
-                              <CertificationBadge key={certification.name} certification={certification} />
-                            )
-                          )
-                        }
-                      </Grid>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
-
-          </Grid>
-        </section>
-      </Grid >
+      <section id="about">
+        <div className="flex flex-col
+          bg-[#eee] text-slate-900 
+          items-center justify-center 
+          p-8 ">
+          <h2 className='text-3xl font-bold'>About Me</h2>
+          <div className='flex flex-col lg:flex-row lg:px-12 lg:gap-x-12'>
+            <div className='flex flex-col'>
+              <h3 className='text-xl font-bold py-2'>Short Bio</h3>
+              <div className='flex flex-col'>
+                <p className="text-lg leading-relaxed text-slate-700 pb-4">
+                  I&#39;m a Software Developer with interests in all technologies spanning from scalable <strong>Cloud Architectures</strong> to Videogames.
+                </p>
+                <p className="text-lg leading-relaxed text-slate-700 pb-4">
+                  In my professional life I work mostly in the Ecommerce field where I&#39;ve built and designed many <strong>Enterprise Solutions</strong> over the years.
+                </p>
+                <p className="text-lg leading-relaxed text-slate-700 pb-4">
+                  This a website where I collect and share some of the <strong>projects</strong> that I pursue outside of my professional life.
+                </p>
+                <p className="text-lg leading-relaxed text-slate-700 pb-4">
+                  I&#39;m always open to new opportunities where I can learn and grow. Feel free to <Link className='underline text-blue-800' target="_blank" href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>contact</Link> me!
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-col'>
+              <div>
+                <h3 className='text-xl font-bold py-2'>Main Skills</h3>
+                <div className='flex flex-row flex-wrap'>
+                  {getSkills().map(skill => {
+                    return (
+                      <span key={skill.name} className="skill">{skill.name}</span>
+                    );
+                  })}
+                </div>
+              </div>
+              <div>
+                <h3 className='text-xl font-bold py-2 mt-2'>Certifications</h3>
+                <div className='flex flex-row flex-wrap'>
+                  {
+                    getCertificationBadges().map(
+                      (certification) => (
+                        <CertificationBadge key={certification.name} certification={certification} />
+                      )
+                    )
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <section id="gamedev">
