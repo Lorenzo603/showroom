@@ -9,32 +9,42 @@
 
 <url>
   <loc>https://www.lorenzofurrer.com/</loc>
-  <lastmod>2024-01-07T19:07:07+00:00</lastmod>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://www.lorenzofurrer.com/project/feverail</loc>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.lorenzofurrer.com/project/japanese-reviews</loc>
-  <lastmod>2024-01-07T19:07:07+00:00</lastmod>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.lorenzofurrer.com/project/unity-thumbnail-generator</loc>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.lorenzofurrer.com/project/eva-tts-lip-sync</loc>
-  <lastmod>2024-01-07T19:07:07+00:00</lastmod>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.lorenzofurrer.com/project/martian-chess</loc>
-  <lastmod>2024-01-07T19:07:07+00:00</lastmod>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.lorenzofurrer.com/project/trader-bot</loc>
-  <lastmod>2024-01-07T19:07:07+00:00</lastmod>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.lorenzofurrer.com/project/showroom</loc>
-  <lastmod>2024-01-07T19:07:07+00:00</lastmod>
+  <lastmod>2024-10-01T19:07:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
