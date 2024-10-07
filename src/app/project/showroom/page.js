@@ -1,64 +1,63 @@
-import { Grid } from "@mui/material";
-import styles from "../styles.module.css"
 import Link from "next/link";
 import Image from "next/image";
-import ProjectImage from "@/components/ProjectImage";
+
+export const metadata = {
+    title: 'Showroom Project',
+    description: 'Quick portfolio site built using Next.js and Tailwind CSS',
+}
 
 export default function ProjectPage({ params }) {
 
     function getTechnologies() {
         return [
-            'Next.js', 'React', 'Material UI',
+            'Next.js', 'React', 'Tailwind CSS',
         ]
     }
 
     return (
+        <main>
+            <div className='bg-slate-100 text-slate-900'>
+                <div className="flex flex-col items-center">
+                    <h1 className='text-4xl font-bold text-center p-8'>Showroom</h1>
+                    <p className="text-xl px-12 sm:px-24">
+                        Quick portfolio site built using Next.js and Tailwind CSS.
+                    </p>
+                </div>
 
-        <Grid item xs={12}>
-            <section className={styles.project_content}>
-                <Grid container justifyContent="center">
-                    <Grid item xs={8}>
-                        <Grid container direction="column">
+                <div className="px-12 sm:px-24">
+                    <section>
+                        <h2 className="text-2xl font-bold py-4 mt-4">Technologies</h2>
+                        <div className="flex flex-wrap">
+                            {getTechnologies().map(tech => {
+                                return (
+                                    <span key={tech} className='skill'>{tech}</span>
+                                );
+                            })}
+                        </div>
+                    </section>
 
-                            <h1 className={styles.project_h1}>Japanese Reviews</h1>
-                            <Grid container justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={8}>
-                                    <p>
-                                        Quick portfolio template using Next.js and Material UI.
-                                    </p>
-                                </Grid>
-                            </Grid>
+                    <section>
+                        <h2 className="text-2xl font-bold py-4">Links</h2>
+                        <div className="flex flex-wrap items-center gap-4 pb-6">
+                            <Link target="_blank" href="https://github.com/Lorenzo603/showroom">
+                                <Image
+                                    src="/img/social/github-logo-black.png"
+                                    width={40}
+                                    height={40}
+                                    style={{ width: "40px", height: "40px" }}
+                                    alt="Showroom GitHub link"
+                                />
+                            </Link>
+                            <Link target="_blank" className="underline text-blue-800" href="https://github.com/Lorenzo603/showroom">
+                                https://github.com/Lorenzo603/showroom
+                            </Link>
+                        </div>
+                    </section>
+                </div>
 
-                            <h2 className={styles.project_h2}>Technologies</h2>
-                            <Grid item xs={12}>
-                                <Grid container justifyContent="flex-start">
-                                    {getTechnologies().map(tech => {
-                                        return (
-                                            <span key={tech} className='skill'>{tech}</span>
-                                        );
-                                    })}
-                                </Grid>
-                            </Grid>
+            </div>
 
-                            <h2 className={styles.project_h2}>Links</h2>
-                            <Grid container alignItems="center" style={{ marginBottom: "2em" }}>
-                                <Link target="_blank" href="https://github.com/Lorenzo603/showroom">
-                                    <Image
-                                        src="/img/social/github-logo-black.png"
-                                        width={40}
-                                        height={40}
-                                        alt="Showroom GitHub link"
-                                    />
-                                </Link>
-                                <Link target="_blank" href="https://github.com/Lorenzo603/showroom">
-                                    https://github.com/Lorenzo603/showroom
-                                </Link>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </section>
-        </Grid>
+        </main >
 
     )
 

@@ -1,6 +1,11 @@
 import Link from "next/link";
 import ProjectImage from "@/components/ProjectImage";
 
+export const metadata = {
+    title: 'Trader Bot Project',
+    description: 'Backtest trading strategies and place real orders on Crypto and Stock exchanges',
+}
+
 export default function ProjectPage({ params }) {
 
     function getTechnologies() {
