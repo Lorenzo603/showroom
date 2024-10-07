@@ -1,7 +1,4 @@
-import { Grid } from "@mui/material";
-import styles from "../styles.module.css"
 import Link from "next/link";
-import Image from "next/image";
 import ProjectImage from "@/components/ProjectImage";
 
 export default function ProjectPage({ params }) {
@@ -14,97 +11,87 @@ export default function ProjectPage({ params }) {
 
     return (
 
-        <Grid item xs={12}>
-            <section className={styles.project_content}>
-                <Grid container justifyContent="center">
-                    <Grid item xs={8}>
-                        <Grid container direction="column">
+        <main>
+            <div className='bg-slate-100 text-slate-900'>
+                <div className="flex flex-col items-center">
+                    <h1 className='text-4xl font-bold text-center p-8'>Trader Bot</h1>
+                    <p className="text-xl px-12 sm:px-24">
+                        Backtest trading strategies and place real orders on Crypto and Stock exchanges.
+                        Connects with both REST and Websockets APIs.
+                        Fetch latest or historical market data and place orders on many exchanges: Binance, Kucoin, Coinbase, Alpaca, Dydx.
+                        Write your own strategies to backtest and apply to live trading.
+                    </p>
+                    <div className="max-w-7xl px-24">
+                        <ProjectImage
+                            imageSrc="/img/projects/trader-bot/liquidity-3d.webp"
+                            imageAlt="Uniswap Liquidity 3D Chart"
+                            imageSizes="100vw"
+                        />
+                    </div>
+                </div>
 
-                            <h1 className={styles.project_h1}>Trader Bot</h1>
-                            <Grid container justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={8}>
-                                    <p>
-                                        Backtest trading strategies and place real orders on Crypto and Stock exchanges.
-                                        Connects with both REST and Websockets APIs.
-                                        Fetch latest or historical market data and place orders on many exchanges: Binance, Kucoin, Coinbase, Alpaca, Dydx.
-                                        Write your own strategies to backtest and apply to live trading.
-                                    </p>
-                                </Grid>
-                            </Grid>
+                <div className="px-12">
+                    <section>
+                        <h2 className="sr-only">Features</h2>
 
-                            <Grid item xs={12}>
-                                <Grid container justifyContent="center" className={styles.project_section}>
-                                    <ProjectImage
-                                        imageSrc="/img/projects/trader-bot/liquidity-3d.png"
-                                        imageAlt="Uniswap Liquidity 3D"
-                                        imageSizes="100vw"
-                                    />
-                                </Grid>
-                            </Grid>
+                        <div className="flex flex-row flex-wrap gap-10 justify-center py-4">
+                            <div className="max-w-md">
+                                <h3 className="text-xl font-bold py-4">DeFi integrations</h3>
+                                <p className="text-xl">Fetch pool data from Uniswap and options data from Lyra.</p>
 
-                            <h2 className="visually-hidden">Features</h2>
+                                <h3 className="text-xl font-bold py-4">Liquidity visualization</h3>
+                                <p className="text-xl">Visualize Uniswap Pool data liquidity in 2D and 3D.</p>
+                            </div>
 
-                            <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={12} md={12} lg={4}>
+                            <div className="max-w-lg">
+                                <ProjectImage
+                                    imageSrc="/img/projects/trader-bot/liquidity-2d.png"
+                                    imageAlt="Trader Bot Liquidity 2D Chart"
+                                    imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  50vw"
+                                />
+                            </div>
+                        </div>
 
-                                    <h3>DeFi integrations</h3>
-                                    <p>Fetch pool data from Uniswap and options data from Lyra.</p>
+                        <div className="flex flex-row flex-wrap gap-10 justify-center py-4">
+                            <div className="max-w-sm">
+                                <ProjectImage
+                                    imageSrc="/img/projects/trader-bot/forex-sentiment.webp"
+                                    imageAlt="Forex Sentiment Chart"
+                                    imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
+                                />
+                            </div>
+                            <div className="max-w-md">
+                                <h3 className="text-xl font-bold py-4">Stock Screener</h3>
+                                <p className="text-xl">Apply signal strategy to all tickers in single view.</p>
 
-                                    <h3>Liquidity visualization</h3>
-                                    <p>Visualize Uniswap Pool data liquidity in 2D and 3D.</p>
+                                <h3 className="text-xl font-bold py-4">Forex sentiment analysis</h3>
+                                <p className="text-xl">Analyze Forex sentiment data.</p>
 
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={6}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/trader-bot/liquidity-2d.png"
-                                            imageAlt="Trader Bot Liquidity 2D"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  50vw"
-                                        />
-                                    </Grid>
-                                </Grid>
-                            </Grid>
+                                <h3 className="text-xl font-bold py-4">Secure Storage</h3>
+                                <p className="text-xl">Sensitive keys stored in local <Link target="_blank" className="underline text-blue-800" href="https://www.hashicorp.com/products/vault">HashiCorp Vault</Link>.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
+                <div className="px-12 pb-8">
 
-                            <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={12} md={12} lg={6}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/trader-bot/forex-sentiment.png"
-                                            imageAlt="Japanese Reviews Main Screen"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 75vw,  100vw"
-                                        />
-                                    </Grid>
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={6}>
-                                    <h3>Stock Screener</h3>
-                                    <p>Apply signal strategy to all tickers in single view</p>
+                    <section>
+                        <h2 className="text-2xl font-bold py-4 mt-4">Technologies</h2>
+                        <div className="flex flex-wrap">
+                            {getTechnologies().map(tech => {
+                                return (
+                                    <span key={tech} className='skill'>{tech}</span>
+                                );
+                            })}
+                        </div>
+                    </section>
 
-                                    <h3>Forex sentiment analysis</h3>
-                                    <p>Analyze Forex sentiment data.</p>
+                </div>
 
-                                    <h3>Secure Storage</h3>
-                                    <p>Sensitive keys stored in local <Link target="_blank" href="https://www.hashicorp.com/products/vault">HashiCorp Vault</Link>.</p>
+            </div>
 
-                                </Grid>
-                            </Grid>
-
-                            <h2 className={styles.project_h2}>Technologies</h2>
-                            <Grid item xs={12} style={{ marginBottom: "2em" }}>
-                                <Grid container justifyContent="flex-start">
-                                    {getTechnologies().map(tech => {
-                                        return (
-                                            <span key={tech} className='skill'>{tech}</span>
-                                        );
-                                    })}
-                                </Grid>
-                            </Grid>
-
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </section>
-        </Grid>
+        </main >
 
     )
 
