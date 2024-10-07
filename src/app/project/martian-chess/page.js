@@ -4,6 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import ProjectImage from "@/components/ProjectImage";
 
+export const metadata = {
+    title: 'Martian Chess Project',
+    description: 'Implementation of the fantastic Martian Chess game from Looney Labs',
+}
+
 export default function ProjectPage({ params }) {
 
     function getTechnologies() {
@@ -13,97 +18,94 @@ export default function ProjectPage({ params }) {
     }
 
     return (
+        <main>
+            <div className='bg-slate-100 text-slate-900'>
+                <div className="flex flex-col items-center">
+                    <h1 className='text-4xl font-bold text-center p-8'>Martian Chess</h1>
+                    <p className="text-xl px-12 sm:px-24">
+                        Implementation of the fantastic Martian Chess game from <Link target="_blank" className="underline text-blue-800" href="https://store.looneylabs.com/">Looney Labs</Link>!
+                        Play against another human or against 3 AI variations.
+                    </p>
+                    <div className="max-w-7xl px-24">
+                        <ProjectImage
+                            imageSrc="/img/projects/martian-chess/martian-chess-3d-big.webp"
+                            imageAlt="Martian Chess 3D Perspective"
+                            imageSizes="100vw"
+                        />
+                    </div>
+                </div>
+                <div className="px-12 sm:px-24">
+                    <section>
 
-        <Grid item xs={12}>
-            <section className={styles.project_content}>
-                <Grid container justifyContent="center">
-                    <Grid item xs={8}>
-                        <Grid container direction="column">
+                        <h2 className="text-2xl font-bold py-4">Chess engine adaptation</h2>
+                        <p className="text-xl">
+                            Concepts of standard Chess Engines implementations were adapted to this new game to find the best move taking into account not only the current state of the board but also loking ahead to a number of moves, exploring all the move-tree.
+                        </p>
 
-                            <h1 className={styles.project_h1}>Martian Chess</h1>
-                            <Grid container justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={8}>
-                                    <p>
-                                        Implementation of the fantastic Martian Chess game from <Link target="_blank" href="https://store.looneylabs.com/">Looney Labs</Link>!
-                                        Play against another human or against 3 AI variations.
-                                    </p>
-                                </Grid>
-                            </Grid>
+                        <div className="flex flex-row flex-wrap gap-10 justify-center py-4">
+                            <div className="max-w-md">
+                                <h3 className="text-xl font-bold py-4">Godot Game Engine</h3>
+                                <p className="text-xl">Implemented with the <Link target="_blank" className="underline text-blue-800" href="https://godotengine.org/">Godot Game Engine</Link>, you can choose between 2D or 3D perspectives.</p>
+                            </div>
 
-                            <Grid item xs={12}>
-                                <Grid container justifyContent="center" className={styles.project_section}>
-                                    <ProjectImage
-                                        imageSrc="/img/projects/martian-chess/martian-chess-3d-big.png"
-                                        imageAlt="Martian Chess 3D Version"
-                                        imageSizes="100vw"
-                                    />
-                                </Grid>
-                            </Grid>
+                            <div className="max-w-lg">
+                                <ProjectImage
+                                    imageSrc="/img/projects/martian-chess/martian-chess-2d.png"
+                                    imageAlt="Martian Chess 2D Perspective"
+                                    imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
+                                />
+                            </div>
+                        </div>
 
-                            <Grid container justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={8}>
-                                    <h2 className={styles.project_h2}>Chess engine adaptation</h2>
-                                    <p>
-                                        Concepts of standard Chess Engines implementations were adapted to this new game to find the best move taking into account not only the current state of the board but also loking ahead to a number of moves, exploring all the move-tree.
-                                    </p>
+                    </section>
+                </div>
 
-                                </Grid>
-                            </Grid>
+                <div className="px-12">
+                    <section>
+                        <h2 className="text-2xl font-bold py-4">Future improvements</h2>
+                        <ul className="text-xl list-disc list-inside">
+                            <li>Implement the 4-Player variation</li>
+                        </ul>
+                    </section>
+                </div>
 
-                            <Grid container spacing={4} justifyContent="center" className={styles.project_section}>
-                                <Grid item xs={12} md={12} lg={4}>
-                                    <h3>Godot Game Engine</h3>
-                                    <p>Implemented with the <Link target="_blank" href="https://godotengine.org/">Godot Game Engine</Link>, you can choose between 2D or 3D perspectives.</p>
+                <div className="px-12">
+                    <section>
+                        <h2 className="text-2xl font-bold py-4">Technologies</h2>
+                        <div className="flex flex-wrap">
+                            {getTechnologies().map(tech => {
+                                return (
+                                    <span key={tech} className='skill'>{tech}</span>
+                                );
+                            })}
+                        </div>
+                    </section>
+                </div>
 
-                                </Grid>
-                                <Grid item xs={12} md={12} lg={4}>
-                                    <Grid container justifyContent="center">
-                                        <ProjectImage
-                                            imageSrc="/img/projects/martian-chess/martian-chess-2d.png"
-                                            imageAlt="Martian Chess 2D Version"
-                                            imageSizes="(max-width: 800px) 100vw, (max-width: 1023px) 100vw,  100vw"
-                                        />
-                                    </Grid>
-                                </Grid>
-                            </Grid>
+                <div className="px-12">
+                    <section>
+                        <h2 className="text-2xl font-bold py-4">Links</h2>
+                        <div className="flex flex-wrap items-center gap-4 pb-6">
+                            <Link target="_blank" href="https://github.com/Lorenzo603/martian-chess">
+                                <Image
+                                    src="/img/social/github-logo-black.png"
+                                    width={40}
+                                    height={40}
+                                    style={{ width: "40px", height: "40px" }}
+                                    alt="Martian Chess Bitbucket link"
+                                />
+                            </Link>
+                            <Link target="_blank" className="underline text-blue-800" href="https://github.com/Lorenzo603/martian-chess">
+                                https://github.com/Lorenzo603/martian-chess
+                            </Link>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
 
 
-
-                            <h2 className={styles.project_h2}>Future improvements</h2>
-                            <ul>
-                                <li>Implement the 4-Player variation</li>
-                            </ul>
-
-                            <h2 className={styles.project_h2}>Technologies</h2>
-                            <Grid item xs={12}>
-                                <Grid container justifyContent="flex-start">
-                                    {getTechnologies().map(tech => {
-                                        return (
-                                            <span key={tech} className='skill'>{tech}</span>
-                                        );
-                                    })}
-                                </Grid>
-                            </Grid>
-
-                            <h2 className={styles.project_h2}>Links</h2>
-                            <Grid container alignItems="center" style={{ marginBottom: "2em" }}>
-                                <Link target="_blank" href="https://github.com/Lorenzo603/martian-chess">
-                                    <Image
-                                        src="/img/social/github-logo-black.png"
-                                        width={40}
-                                        height={40}
-                                        alt="Martian Chess GitHub link"
-                                    />
-                                </Link>
-                                <Link target="_blank" href="https://github.com/Lorenzo603/martian-chess">
-                                    https://github.com/Lorenzo603/martian-chess
-                                </Link>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </section>
-        </Grid>
 
     )
 

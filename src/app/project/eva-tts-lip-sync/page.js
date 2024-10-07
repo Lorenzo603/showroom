@@ -1,5 +1,3 @@
-import { Grid } from "@mui/material";
-import styles from "../styles.module.css"
 import Link from "next/link";
 import Image from "next/image";
 import ProjectImage from "@/components/ProjectImage";
