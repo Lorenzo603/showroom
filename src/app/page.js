@@ -49,6 +49,14 @@ export default function Home() {
   function getCertificationBadges() {
     return [
       {
+        "name": "AWS AI Practitioner Certification",
+        "badge": "/img/certifications/aws-ai-practitioner-badge.webp",
+      },
+      {
+        "name": "AWS AI Early Adopter Badge",
+        "badge": "/img/certifications/aws-ai-early-adopter-badge.webp",
+      },
+      {
         "name": "AWS Security Specialty Certification",
         "badge": "/img/certifications/aws-security-specialty-badge.webp",
       },
@@ -175,14 +183,16 @@ export default function Home() {
               </div>
               <div>
                 <h3 className='text-xl font-bold py-2 mt-2'>Certifications</h3>
-                <div className='flex flex-row flex-wrap'>
-                  {
-                    getCertificationBadges().map(
-                      (certification) => (
-                        <CertificationBadge key={certification.name} certification={certification} />
+                <div className='flex'>
+                  <div className='grid grid-cols-3'>
+                    {
+                      getCertificationBadges().map(
+                        (certification) => (
+                          <CertificationBadge key={certification.name} certification={certification} />
+                        )
                       )
-                    )
-                  }
+                    }
+                  </div>
                 </div>
               </div>
             </div>
