@@ -2,7 +2,7 @@
 
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline';
+    script-src;
     style-src 'self' 'unsafe-inline';
     img-src 'self' blob: data:;
     font-src 'self';
@@ -12,7 +12,7 @@ const cspHeader = `
     frame-ancestors 'none';
     upgrade-insecure-requests;
 `
- 
+
 const nextConfig = {
     async headers() {
         return [
