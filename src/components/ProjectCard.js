@@ -60,9 +60,11 @@ export default function ProjectCard({ project }) {
                     transition-shadow duration-500 hover:shadow-projectCard
                     overflow-visible z-auto" // Needed to avoid tooltip being cutoff by the Card
                     >
-                        <img
+                        <Image
                             src={project.image}
                             alt=""
+                            width={382}
+                            height={192}
                             className="w-full h-48 object-cover rounded-t-lg"
                         />
                         <div className="p-4">
