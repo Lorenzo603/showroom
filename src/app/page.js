@@ -14,16 +14,16 @@ export default function Home() {
         "name": "Java",
       },
       {
-        "name": "Spring",
+        "name": "Spring Framework",
       },
       {
-        "name": "SAP Commerce",
+        "name": "SAP Commerce (Hybris)",
       },
       {
         "name": "Python",
       },
       {
-        "name": "AWS",
+        "name": "Amazon Web Services (AWS)",
       },
       {
         "name": "SQL",
@@ -71,6 +71,10 @@ export default function Home() {
       {
         "name": "AWS Cloud Practitioner Certification",
         "badge": "/img/certifications/aws-cloud-practitioner-badge.webp",
+      },
+      {
+        "name": "AWS Well Architected Proficient",
+        "badge": "/img/certifications/aws-well-architected-proficient-badge.webp",
       },
     ]
   }
@@ -182,9 +186,9 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-bold py-2 mt-2'>Certifications</h3>
+                <h3 className='text-xl font-bold py-2 mt-2'>Certifications & Awards</h3>
                 <div className='flex'>
-                  <div className='grid grid-cols-3'>
+                  <div className='grid grid-cols-3 md:grid-cols-4'>
                     {
                       getCertificationBadges().map(
                         (certification) => (
