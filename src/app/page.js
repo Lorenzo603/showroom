@@ -49,16 +49,20 @@ export default function Home() {
   function getCertificationBadges() {
     return [
       {
-        "name": "AWS AI Practitioner Certification",
-        "badge": "/img/certifications/aws-ai-practitioner-badge.webp",
-      },
-      {
-        "name": "AWS AI Early Adopter Badge",
-        "badge": "/img/certifications/aws-ai-early-adopter-badge.webp",
+        "name": "AWS Solution Architect Professional Certification",
+        "badge": "/img/certifications/aws-solutions-architect-professional-badge.webp",
       },
       {
         "name": "AWS Security Specialty Certification",
         "badge": "/img/certifications/aws-security-specialty-badge.webp",
+      },
+      {
+        "name": "AWS AI Practitioner Early Adopter Badge",
+        "badge": "/img/certifications/aws-ai-early-adopter-badge.webp",
+      },
+      {
+        "name": "AWS AI Practitioner Certification",
+        "badge": "/img/certifications/aws-ai-practitioner-badge.webp",
       },
       {
         "name": "AWS Solution Architect Associate Certification",
