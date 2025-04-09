@@ -49,7 +49,7 @@ export default function Home() {
   function getCertificationBadges() {
     return [
       {
-        "name": "AWS Solution Architect Professional Certification",
+        "name": "AWS Solutions Architect Professional Certification",
         "badge": "/img/certifications/aws-solutions-architect-professional-badge.webp",
       },
       {
@@ -65,8 +65,8 @@ export default function Home() {
         "badge": "/img/certifications/aws-ai-practitioner-badge.webp",
       },
       {
-        "name": "AWS Solution Architect Associate Certification",
-        "badge": "/img/certifications/aws-solution-architect-associate-badge.webp",
+        "name": "AWS Solutions Architect Associate Certification",
+        "badge": "/img/certifications/aws-solutions-architect-associate-badge.webp",
       },
       {
         "name": "AWS Developer Associate Certification",
