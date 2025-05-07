@@ -1,11 +1,6 @@
-'use client'
-
 import Link from "next/link";
 
-
 export default function HeroComponent() {
-
-
     return (
         <div className="relative bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 h-96 sm:h-[30rem] flex items-center justify-center overflow-hidden">
             {/* Background Image */}
@@ -19,11 +14,13 @@ export default function HeroComponent() {
                 <p className="text-2xl sm:text-4xl px-8 pb-8 drop-shadow-md">
                     I develop all kinds of applications, some professionally, some for fun!
                 </p>
-                <Link href="#about" className="mt-4 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-blue-100 transition-all">
+                <Link
+                    href="#about"
+                    className="mt-4 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg transition-all hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-yellow-500 hover:text-white"
+                >
                     Learn More
                 </Link>
             </div>
-
         </div>
     );
 }
