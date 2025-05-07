@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroComponent() {
     return (
-        <div className="relative bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 h-96 sm:h-[30rem] flex items-center justify-center overflow-hidden">
+        <div className="relative bg-linear-to-r from-blue-700 via-purple-700 to-pink-700 h-96 sm:h-[30rem] flex items-center justify-center overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 bg-[url('/img/geometric-mosaic-bg.webp')] bg-cover bg-center animate-fade-opacity"></div>
 
@@ -16,7 +16,7 @@ export default function HeroComponent() {
                 </p>
                 <Link
                     href="#about"
-                    className="mt-4 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg transition-all hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-yellow-500 hover:text-white"
+                    className="mt-4 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg transition-all hover:bg-linear-to-r hover:from-red-500 hover:via-orange-500 hover:to-yellow-500 hover:text-white"
                 >
                     Learn More
                 </Link>
