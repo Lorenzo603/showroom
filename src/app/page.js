@@ -214,12 +214,20 @@ export default function Home() {
 
 
       <section id="gamedev">
-        <div className='bg-zinc-200 flex flex-col items-center justify-center py-8'>
-          <h2 className='text-3xl text-slate-900 font-bold'>Gamedev</h2>
+        <div className="bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 flex flex-col items-center justify-center py-8 text-white">
+          <h2 className="text-3xl font-bold drop-shadow-lg">Gamedev</h2>
 
-          <div className='px-8'>
-            <p className="text-lg leading-relaxed text-slate-700 py-4">
-              You can also find some games I developed on my <Link target="_blank" className='underline text-blue-800' href={process.env.NEXT_PUBLIC_ITCHIO_URL}>itch.io</Link> page!
+          <div className="px-8">
+            <p className="text-lg leading-relaxed py-4 drop-shadow-md">
+              You can also find some games I developed on my{" "}
+              <Link
+                target="_blank"
+                className="underline text-white hover:text-yellow-300"
+                href={process.env.NEXT_PUBLIC_ITCHIO_URL}
+              >
+                itch.io
+              </Link>{" "}
+              page!
             </p>
           </div>
           <Link target="_blank" href={process.env.NEXT_PUBLIC_ITCHIO_URL}>
@@ -228,10 +236,11 @@ export default function Home() {
               width={200}
               height={60}
               alt="Available on itch.io"
+              className="drop-shadow-lg"
             />
           </Link>
         </div>
-      </section >
+      </section>
 
       <section id="projects">
         <div className='flex flex-col items-center justify-center bg-slate-50 p-6'>
