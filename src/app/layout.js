@@ -11,8 +11,12 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  metadataBase: new URL('https://www.lorenzofurrer.com'),
   title: process.env.NEXT_PUBLIC_PERSONAL_NAME + ' - Software Developer Personal Projects Portfolio',
   description: 'Portfolio showcasing a my personal projects as a software developer',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export const viewport = {
