@@ -5,6 +5,14 @@ import Link from 'next/link';
 export default function ProjectCard({ project }) {
 
 	const TECH_LOGOS_MAP = new Map();
+	TECH_LOGOS_MAP.set('vscode', {
+		'logo': '/img/techs/vscode-logo.svg',
+		'tooltip': 'Visual Studio Code',
+	});
+	TECH_LOGOS_MAP.set('typescript', {
+		'logo': '/img/techs/typescript-logo.svg',
+		'tooltip': 'TypeScript',
+	});
 	TECH_LOGOS_MAP.set('nextjs', {
 		'logo': '/img/techs/nextjs-logo.svg',
 		'tooltip': 'Next.js',

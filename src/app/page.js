@@ -24,13 +24,13 @@ export default function Home() {
         "name": "Python",
       },
       {
-        "name": "Amazon Web Services (AWS)",
+        "name": "AI & Machine Learning",
       },
       {
-        "name": "SQL",
+        "name": "JavaScript",
       },
       {
-        "name": "MongoDB",
+        "name": "TypeScript",
       },
       {
         "name": "Next.js",
@@ -42,7 +42,13 @@ export default function Home() {
         "name": "Tailwind CSS",
       },
       {
-        "name": "Git",
+        "name": "Amazon Web Services (AWS)",
+      },
+      {
+        "name": "PostgreSQL & MySQL",
+      },
+      {
+        "name": "MongoDB",
       },
       {
         "name": "Ecommerce",
@@ -93,6 +99,13 @@ export default function Home() {
   function getProjects() {
     return [
       {
+        'title': 'Image Caption Manager',
+        'slug': 'image-caption-manager',
+        'image': '/img/projects/image-caption-manager/image-caption-manager-intro.webp',
+        'description': 'A Visual Studio Code extension for managing image-caption pairs for AI datasets. Efficiently view and edit captions for images, ideal for machine learning dataset preparation.',
+        'technologies': ['vscode', 'typescript'],
+      },
+      {
         'title': 'Feverail',
         'slug': 'feverail',
         'image': '/img/projects/feverail/feverail-intro.webp',
@@ -138,7 +151,7 @@ export default function Home() {
         'title': 'Portfolio template',
         'slug': 'showroom',
         'image': '/img/projects/showroom/showroom-title.webp',
-        'description': 'This website. Created with the Next.js framework. Feel free to use this as template.',
+        'description': 'This website in all its glory :). Lovingly created with the Next.js framework. Feel free to check it out on GitHub and use it as template to build your own.',
         'technologies': ['nextjs', 'react'],
       },
     ]
