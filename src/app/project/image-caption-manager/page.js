@@ -111,9 +111,9 @@ export default function ProjectPage({ params }) {
             <h2 className="text-2xl font-bold py-4 mt-4">Usage</h2>
             <ol className="text-xl list-decimal list-inside space-y-2">
               <li>Open a folder containing image-caption pairs in VS Code</li>
-              <li>Use the Command Palette (<code className="bg-gray-200 px-2 py-1 rounded">Ctrl+Shift+P</code>) and search for "Open Image Caption Manager"</li>
+              <li>Use the Command Palette (<code className="bg-gray-200 px-2 py-1 rounded">Ctrl+Shift+P</code>) and search for &quot;Open Image Caption Manager&quot;</li>
               <li>Or use the keyboard shortcut <code className="bg-gray-200 px-2 py-1 rounded">Ctrl+Alt+I</code> (or <code className="bg-gray-200 px-2 py-1 rounded">Cmd+Alt+I</code> on Mac)</li>
-              <li>Or click the "Caption Manager" button in the status bar</li>
+              <li>Or click the &quot;Caption Manager&quot; button in the status bar</li>
             </ol>
 
             <h3 className="text-xl font-semibold mt-6 mb-3">File Structure</h3>
