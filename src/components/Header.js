@@ -3,9 +3,9 @@ import HeaderNavLink from "./HeaderNavLink";
 const Header = () => {
 
   return (
-    <div>
+    <div className="bg-black text-slate-50">
       <header>
-        <div className="header">
+        <div>
           <nav>
             <div className="hidden sm:flex sm:float-left flex-col sm:flex-row text-left">
               <HeaderNavLink href="/">{process.env.NEXT_PUBLIC_PERSONAL_NAME}</HeaderNavLink>
